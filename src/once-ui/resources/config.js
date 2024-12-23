@@ -16,32 +16,31 @@ const style = {
 
 // default metadata
 const meta = {
-    title: 'Once UI - Your Personalized Design System for Next.js',
-    description: 'An open-source design system and component library for Next.js that emphasizes easy styling and accessibility in UI development.'
+    title: 'Joe Anderson',
+    description: 'A portfolio website for Joe Anderson, a developer and undergraduate student at the University of Minnesota.'
 }
 
 
 // default open graph data
 const og = {
-    title: 'Once UI for Next.js',
-    description: 'We let designers code and developers design.',
+    title: 'Joe Anderson',
+    description: 'A portfolio website for Joe Anderson, a developer and undergraduate student at the University of Minnesota.',
     type: 'website'
 }
 
 // default schema data
 const schema = {
     logo: '',
-    type: 'Organization',
-    name: 'One UI',
-    description: 'Once UI is an open-source design system and component library for Next.js.',
-    email: 'lorant@once-ui.com'
+    type: 'Individual',
+    name: 'Joe Anderson',
+    description: 'A portfolio website for Joe Anderson, a developer and undergraduate student at the University of Minnesota.',
+    email: 'and10287@umn.edu'
 }
 
 // social links
 const social = {
-    twitter: 'https://www.twitter.com/_onceui',
-    linkedin: 'https://www.linkedin.com/company/once-ui/',
-    discord: 'https://discord.com/invite/5EyAQ4eNdS'
+    linkedin: 'https://www.linkedin.com/in/joe-anderson-dev/',
+    github: 'https://github.com/jjoej15'
 }
 
 export { baseURL, style, meta, og, schema, social };
