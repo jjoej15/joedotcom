@@ -108,15 +108,10 @@ export default function RootLayout({
 				<Background
 					style={{zIndex: '-1'}}
 					position="fixed"
-					mask="cursor"
-					dots={{
-						display: true,
-						opacity: 0.4,
-						size: '20'
-					}}
+					mask="topLeft"
 					gradient={{
 						display: true,
-						opacity: 0.4,
+						opacity: 1,
 					}}/>
 				<Flex
 					flex={1} direction="column">
