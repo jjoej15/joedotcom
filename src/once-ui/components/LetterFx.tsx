@@ -92,7 +92,7 @@ const LetterFx = forwardRef<HTMLSpanElement, LetterFxProps>(({
 		setInProgress,
 		speed,
 		charset,
-		trigger === 'instant' ? setHasAnimated : undefined
+		trigger === 'instant' || 'hover' ? setHasAnimated : undefined
 	), [inProgress, trigger, speed, charset]);
 
 	useEffect(() => {
@@ -100,13 +100,14 @@ const LetterFx = forwardRef<HTMLSpanElement, LetterFxProps>(({
 			setText(children);
 			originalText.current = children;
 
-			if (trigger === 'instant' && !hasAnimated) {
+			if (!hasAnimated) {
 				eventHandler();
 			}
 		}
 	}, [children, trigger, eventHandler, hasAnimated]);
 
 	useEffect(() => {
+		console.log(onTrigger);
 		if (trigger === 'custom' && onTrigger) {
 			onTrigger(eventHandler);
 		}
