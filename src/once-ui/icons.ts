@@ -26,6 +26,11 @@ import {
 	FaGithub
 } from "react-icons/fa6";
 
+import {
+	FaLink,
+	FaLinkedin 
+} from "react-icons/fa"
+
 export const iconLibrary: Record<string, IconType> = {
 	chevronUp: HiChevronUp,
     chevronDown: HiChevronDown,
@@ -47,4 +52,5 @@ export const iconLibrary: Record<string, IconType> = {
 	arrowUpRight: HiArrowUpRight,
 	minus: HiMiniMinus,
 	plus: HiMiniPlus,
+	linkedIn: FaLinkedin
 };

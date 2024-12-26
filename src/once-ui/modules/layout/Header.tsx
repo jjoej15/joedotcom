@@ -26,8 +26,7 @@ const Header: React.FC<HeaderProps> = ({
             }}
             as="header"
             fillWidth paddingX="m" height="56"
-            alignItems="center"
-            background="surface">
+            alignItems="center">
             <Flex
                 hide="s">
                 <Logo/>
