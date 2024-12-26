@@ -1,9 +1,12 @@
 "use client";
 
-import React from 'react';
+// import React from 'react';
+import { useState } from 'react';
 
 import { Heading, Text, Flex, Button, Grid, Icon, InlineCode, Logo, LetterFx, Arrow } from '@/once-ui/components';
+import Image from 'next/image';
 import { Header } from '@/once-ui/modules';
+import headshot from "./assets/images/headshot.jpg";
 import Link from 'next/link';
 
 export default function Home() {
@@ -24,6 +27,7 @@ export default function Home() {
 			description: "Scale text automatically.",
 		},
 	];
+	const [imageHover, setImageHover] = useState(false);
 
 	return (
 		<>
@@ -45,21 +49,27 @@ export default function Home() {
 							fillWidth gap="24">
 							<Flex
 								position="relative"
-								flex={2} paddingTop="56" paddingX="xl">
-								<Logo size="xl" icon={false} style={{zIndex: '1'}} href="https://once-ui.com"/>
+								flex={2} paddingX="xl">
+								<Image 
+									src={headshot}
+									width={300}
+                    				height={300}
+									alt="Joe's headshot"
+									onMouseEnter={() => setImageHover(true)}
+									onMouseLeave={() => setImageHover(false)}
+									style={{
+										borderRadius: '100%', 
+										zIndex: 1,
+										boxShadow: `0 0 ${imageHover ? "45px rgba(134, 72, 77, 0.83)" : "40px rgba(140, 38, 46, 0.83)"}`,
+										transition: 'box-shadow 0.3s ease'
+									}}
+									// gba(140, 38, 46, 0.83)`
+								/>	
 							</Flex>
 							<Flex
 								position="relative"
 								flex={4} gap="24" marginBottom="104"
 								direction="column">
-								<InlineCode
-									className="shadow-m"
-									style={{
-										width: 'fit-content',
-										padding: 'var(--static-space-8) var(--static-space-16)',
-										backdropFilter: 'blur(var(--static-space-1))'}}>
-									Start by editing <span className="brand-on-background-medium">app/page.tsx</span>
-								</InlineCode>
 								<Heading
 									wrap="balance"
 									variant="display-strong-s">
@@ -70,15 +80,6 @@ export default function Home() {
 										</LetterFx>
 									</span>
 								</Heading>
-								<Button
-									id="readDocs"
-									href="https://once-ui.com/docs"
-									variant="secondary">
-									<Flex alignItems="center">
-										Read docs
-										<Arrow trigger="#readDocs"/>
-									</Flex>
-								</Button>
 							</Flex>
 						</Flex>
 						<Grid
