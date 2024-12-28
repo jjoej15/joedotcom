@@ -30,6 +30,7 @@ const SmartLink = forwardRef<HTMLAnchorElement, SmartLinkProps>(({
         ...props
     }, ref) => {
         const isExternal = href.startsWith('http') || href.startsWith('//');
+        const [linkHover, setLinkHover] = React.useState(false);
 
         const content = (
             <>
@@ -50,7 +51,11 @@ const SmartLink = forwardRef<HTMLAnchorElement, SmartLinkProps>(({
                 gap: 'var(--static-space-8)',
                 borderRadius: 'var(--radius-s)',
                 ...(selected && { textDecoration: 'underline' }),
-                ...style
+                ...style,
+                color: `${!linkHover ? 
+                    "var(--brand-on-background-medium)" :
+                    'rgb(243, 243, 243)'
+                }`
             } : { 
                 textDecoration: 'none',
                 color: 'inherit',
@@ -73,6 +78,8 @@ const SmartLink = forwardRef<HTMLAnchorElement, SmartLinkProps>(({
 
         return (
             <Link
+                onMouseEnter={() => setLinkHover(true)}
+                onMouseLeave={() => setLinkHover(false)}    
                 href={href}
                 {...commonProps}
                 {...props}>
