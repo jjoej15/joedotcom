@@ -4,6 +4,7 @@
 import { useState } from 'react';
 
 import { Heading, Text, Flex, Button, Grid, Icon, InlineCode, Logo, LetterFx, Arrow } from '@/once-ui/components';
+import Footer from './components/Footer';
 import Image from 'next/image';
 import { Header } from '@/once-ui/modules';
 import headshot from "./assets/images/headshot.jpg";
@@ -95,38 +96,7 @@ export default function Home() {
 						</Flex>
 					</Flex>
 				</Flex>
-				<Flex
-					as="footer"
-					position="relative"
-					fillWidth paddingX="l" paddingY="m"
-					justifyContent="space-between"
-					mobileDirection='column'>
-					<Text
-						variant="body-default-s" onBackground="neutral-weak">
-						Portfolio built using Next.js, TypeScript, SASS, and Once UI.
-					</Text>
-					<Flex
-						gap="12">
-						<Button
-							id="github"
-							href="https://github.com/jjoej15"
-							prefixIcon="github" size="s" variant="tertiary">
-							<Flex alignItems="center">
-								GitHub
-								<Arrow trigger="#github"/>
-							</Flex>
-						</Button>
-						<Button
-							id="linkedIn"
-							href="https://www.linkedin.com/in/joe-anderson-dev/"
-							prefixIcon="linkedIn" size="s" variant="tertiary">
-							<Flex alignItems="center">
-								LinkedIn
-								<Arrow trigger="#linkedIn"/>
-							</Flex>
-						</Button>
-					</Flex>
-				</Flex>
+				<Footer />
 			</Flex>
 		</>
 	);

@@ -101,6 +101,7 @@ export default function RootLayout({
 					type="application/ld+json"
 					dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
 				/>
+				<link rel="shortcut icon" href="/images/favicon.ico" />
 			</head>
 			<Flex
 				as="body"
