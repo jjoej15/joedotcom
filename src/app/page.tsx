@@ -10,23 +10,6 @@ import headshot from "./assets/images/headshot.jpg";
 import Link from 'next/link';
 
 export default function Home() {
-	const links = [
-		{
-			href: "https://once-ui.com/docs/theming",
-			title: "Themes",
-			description: "Style your app in minutes.",
-		},
-		{
-			href: "https://once-ui.com/docs/flexComponent",
-			title: "Layout",
-			description: "Build responsive layouts.",
-		},
-		{
-			href: "https://once-ui.com/docs/typography",
-			title: "Typography",
-			description: "Scale text automatically.",
-		},
-	];
 	const [imageHover, setImageHover] = useState(false);
 
 	return (
@@ -46,10 +29,11 @@ export default function Home() {
 						fillWidth fillHeight padding="l" gap="l">
 						<Flex
 							mobileDirection="column"
-							fillWidth gap="24">
+							fillWidth gap="48">
 							<Flex
-								position="relative"
-								flex={2} paddingX="xl">
+								position="relative" flex={2} mobileDirection='row'
+								direction="column" justifyContent='center'
+								paddingLeft='m' paddingRight='xl'>
 								<Image 
 									src={headshot}
 									width={300}
@@ -63,69 +47,63 @@ export default function Home() {
 										boxShadow: `0 0 ${imageHover ? "45px rgba(134, 72, 77, 0.83)" : "40px rgba(140, 38, 46, 0.83)"}`,
 										transition: 'box-shadow 0.3s ease'
 									}}
-									// gba(140, 38, 46, 0.83)`
 								/>	
 							</Flex>
 							<Flex
-								position="relative"
-								flex={4} gap="24" marginBottom="104"
-								direction="column">
-								<Heading
-									wrap="balance"
-									variant="display-strong-s">
-									<span className="font-code">
-										<LetterFx
-											trigger="hover">
-											hey, i'm joe!
-										</LetterFx>
-									</span>
-								</Heading>
+								position="relative" 
+								 direction="column">
+								<Flex
+									position="relative"
+									gap="24" marginBottom="32"
+									direction="column">
+									<Heading
+										wrap="balance"
+										variant="display-strong-s">
+										<span className="font-code">
+											<LetterFx
+												trigger="hover">
+												hey, i'm joe!
+											</LetterFx>
+										</span>
+									</Heading>
+								</Flex>
+								<Flex
+									position="relative" direction="column">
+									<Text
+										marginBottom='24' align="justify"
+										style={{ lineHeight: "1.5" }}>
+										Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil et nesciunt maiores accusantium, 
+										incidunt dolorem molestiae minus facere odio eius nam pariatur vitae facilis ab delectus nostrum distinctio. 
+										Unde, ex.
+									</Text>
+									<Text
+										marginBottom='24' align="justify"
+										style={{ lineHeight: "1.5" }}>
+										Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil et nesciunt maiores accusantium, 
+										incidunt dolorem molestiae minus facere odio eius nam pariatur vitae facilis ab delectus nostrum distinctio. 
+										Unde, ex.
+									</Text>
+									<Text
+										marginBottom='24' align="justify"
+										style={{ lineHeight: "1.5" }}>
+										Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil et nesciunt maiores accusantium, 
+										incidunt dolorem molestiae minus facere odio eius nam pariatur vitae facilis ab delectus nostrum distinctio. 
+										Unde, ex.
+									</Text>
+								</Flex>
 							</Flex>
 						</Flex>
-						<Grid
-							radius="l"
-							border="neutral-medium"
-							borderStyle="solid-1"
-							columns="repeat(3, 1fr)"
-							tabletColumns="1col"
-							mobileColumns="1col"
-							fillWidth>
-							{links.map((link) => (
-								<Link
-									target="_blank"
-									style={{ padding: 'var(--responsive-space-l)' }}
-									key={link.href}
-									href={link.href}>
-									<Flex
-										fillWidth paddingY="8" gap="8"
-										direction="column">
-										<Flex
-											fillWidth gap="12"
-											alignItems="center">
-											<Text
-												variant="body-strong-m" onBackground="neutral-strong">
-												{link.title}
-											</Text>
-											<Icon size="s" name="arrowUpRight" />
-										</Flex>
-										<Text
-											variant="body-default-s" onBackground="neutral-weak">
-											{link.description}
-										</Text>
-									</Flex>
-								</Link>
-							))}
-						</Grid>
 					</Flex>
 				</Flex>
 				<Flex
 					as="footer"
 					position="relative"
 					fillWidth paddingX="l" paddingY="m"
-					justifyContent="space-between">
+					justifyContent="space-between"
+					mobileDirection='column'>
 					<Text
 						variant="body-default-s" onBackground="neutral-weak">
-						Portfolio built using Next.js and Once UI
+						Portfolio built using Next.js, TypeScript, SASS, and Once UI.
 					</Text>
 					<Flex
 						gap="12">
