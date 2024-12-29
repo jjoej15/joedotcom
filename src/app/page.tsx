@@ -3,13 +3,12 @@
 // import React from 'react';
 import { useState } from 'react';
 
-import { Heading, Text, Flex, Button, Grid, Icon, InlineCode, Logo, LetterFx, Arrow, SmartLink } from '@/once-ui/components';
+import { Heading, Text, Flex, LetterFx, SmartLink } from '@/once-ui/components';
 import styles from "./styles/Home.module.sass"
 import Footer from './components/Footer';
 import Image from 'next/image';
 import { Header } from '@/once-ui/modules';
 import headshot from "./assets/images/headshot.jpg";
-import Link from 'next/link';
 
 export default function Home() {
 	const [imageHover, setImageHover] = useState(false);
@@ -74,23 +73,6 @@ export default function Home() {
 								</Flex>
 								<Flex
 									position="relative" direction="column">
-									{/* <Text
-										marginBottom='24' align="justify" as="div"
-										style={{ lineHeight: "1.5" }}>
-										<span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </span>
-										<span><SmartLink // Example of what embedding a link would look like
-											href="" color="rgb(222, 37, 37)"
-											style={{ 
-												padding: "0", 
-												margin: "0", 
-												display: "inline", 
-												gap: "0" 
-											}}>
-											Nihil et nesciunt
-										</SmartLink></span>
-										<span> maiores accusantium, incidunt dolorem molestiae minus facere odio eius nam pariatur vitae 
-										facilis ab delectus nostrum distinctio. Unde, ex.</span>
-									</Text> */}
 									<Text
 										marginBottom='20' align="justify"
 										style={{ lineHeight: "1.5" }}>
@@ -141,7 +123,7 @@ export default function Home() {
 										style={{ lineHeight: "1.5" }}>
 										<span>I'm most interested in Machine Learning and Artificial 
 											Intelligence, and am seeking out research opportunities and potentially a Master's degree.
-											In my freetime I have worked on a variety of different </span>
+											In my freetime I have worked on a variety of </span>
 										<span><SmartLink 
 											href="" color="rgb(240, 73, 73)"
 											style={{
