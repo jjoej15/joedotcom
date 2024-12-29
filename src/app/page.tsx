@@ -74,7 +74,7 @@ export default function Home() {
 								</Flex>
 								<Flex
 									position="relative" direction="column">
-									<Text
+									{/* <Text
 										marginBottom='24' align="justify" as="div"
 										style={{ lineHeight: "1.5" }}>
 										<span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </span>
@@ -90,20 +90,69 @@ export default function Home() {
 										</SmartLink></span>
 										<span> maiores accusantium, incidunt dolorem molestiae minus facere odio eius nam pariatur vitae 
 										facilis ab delectus nostrum distinctio. Unde, ex.</span>
+									</Text> */}
+									<Text
+										marginBottom='20' align="justify"
+										style={{ lineHeight: "1.5" }}>
+										<span>I'm currently a student at the </span>
+										<span><SmartLink 
+											href="" color="rgb(240, 73, 73)"
+											style={{
+												padding: "0",
+												margin: "0",
+												display: "inline", 
+												gap: "0"
+											}}>
+											University of Minnesota
+										</SmartLink></span>
+										<span> in Minneapolis, MN. I'm a junior who's working towards
+											a Bachelor of Science in Computer Science with a minor in Statistics.</span>
 									</Text>
 									<Text
-										marginBottom='24' align="justify"
+										marginBottom='20' align="justify"
 										style={{ lineHeight: "1.5" }}>
-										Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil et nesciunt maiores accusantium, 
-										incidunt dolorem molestiae minus facere odio eius nam pariatur vitae facilis ab delectus nostrum distinctio. 
-										Unde, ex.
+										<span>I'm also a software engineering intern at </span>
+										<span><SmartLink 
+											href="" color="rgb(240, 73, 73)"
+											style={{
+												padding: "0",
+												margin: "0",
+												display: "inline", 
+												gap: "0"
+											}}>
+											Maverick Software Consulting
+										</SmartLink></span>
+										<span> in partnership with </span>
+										<span><SmartLink 
+											href="" color="rgb(240, 73, 73)"
+											style={{
+												padding: "0",
+												margin: "0",
+												display: "inline", 
+												gap: "0"
+											}}>
+											SPS Commerce
+										</SmartLink></span>
+										<span>, where I'm maintaining and developing new data transformation services
+											to be integrated into our customers' ERP systems.</span>
 									</Text>
 									<Text
-										marginBottom='24' align="justify"
+										marginBottom='20' align="justify"
 										style={{ lineHeight: "1.5" }}>
-										Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil et nesciunt maiores accusantium, 
-										incidunt dolorem molestiae minus facere odio eius nam pariatur vitae facilis ab delectus nostrum distinctio. 
-										Unde, ex.
+										<span>I'm most interested in Machine Learning and Artificial 
+											Intelligence, and am seeking out research opportunities and potentially a Master's degree.
+											In my freetime I have worked on a variety of different </span>
+										<span><SmartLink 
+											href="" color="rgb(240, 73, 73)"
+											style={{
+												padding: "0",
+												margin: "0",
+												display: "inline", 
+												gap: "0"
+											}}>
+											projects
+										</SmartLink></span>
+										<span>, and also enjoy producing music, reading fiction, skiing, fashion, and playing the guitar.</span>
 									</Text>
 								</Flex>
 							</Flex>

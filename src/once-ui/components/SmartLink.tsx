@@ -54,7 +54,7 @@ const SmartLink = forwardRef<HTMLAnchorElement, SmartLinkProps>(({
                 borderRadius: 'var(--radius-s)',
                 ...(selected && { textDecoration: 'underline' }),
                 color: color, 
-                opacity: `${linkHover ? "100%" : "90%"}`,
+                opacity: `${linkHover ? "100%" : "85%"}`,
                 transition: "opacity 0.2s ease",
                 ...style
             } : { 

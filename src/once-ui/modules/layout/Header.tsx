@@ -34,7 +34,7 @@ const Header= () => {
                     alignItems="center">
                     <SmartLink
                         href="" color="white">
-                        Experience
+                        Experiences
                     </SmartLink>
                     <SmartLink
                         href="" color="white">
