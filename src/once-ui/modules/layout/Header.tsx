@@ -20,7 +20,7 @@ const Header= () => {
                 wrap="nowrap" color='inherit'
                 variant="display-strong-xs">
                 <SmartLink
-                    href=""
+                    href="" color="white"
                     style={{ textDecoration: "none" }}>
                     Joe Anderson
                 </SmartLink>
@@ -34,15 +34,15 @@ const Header= () => {
                     fillWidth gap="4" paddingX="l"
                     alignItems="center">
                     <SmartLink
-                        href="">
+                        href="" color="white">
                         Experience
                     </SmartLink>
                     <SmartLink
-                        href="">
+                        href="" color="white">
                         Projects
                     </SmartLink>
                     <SmartLink
-                        href="">
+                        href="" color="white">
                         Contact
                     </SmartLink>
                 </Flex>

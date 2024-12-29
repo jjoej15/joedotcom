@@ -7,6 +7,7 @@ import { Icon } from '.';
 
 interface SmartLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
     href: string;
+    color: string;
     prefixIcon?: string;
     suffixIcon?: string;
     iconSize?: 'xs' | 's' | 'm' | 'l' | 'xl';
@@ -19,6 +20,7 @@ interface SmartLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
 
 const SmartLink = forwardRef<HTMLAnchorElement, SmartLinkProps>(({ 
         href,
+        color,
         prefixIcon,
         suffixIcon,
         iconSize='xs',
@@ -51,11 +53,10 @@ const SmartLink = forwardRef<HTMLAnchorElement, SmartLinkProps>(({
                 gap: 'var(--static-space-8)',
                 borderRadius: 'var(--radius-s)',
                 ...(selected && { textDecoration: 'underline' }),
-                ...style,
-                color: `${!linkHover ? 
-                    "var(--brand-on-background-medium)" :
-                    'rgb(243, 243, 243)'
-                }`
+                color: color, 
+                opacity: `${linkHover ? "100%" : "80%"}`,
+                transition: "opacity 0.2s ease",
+                ...style
             } : { 
                 textDecoration: 'none',
                 color: 'inherit',
@@ -67,6 +68,8 @@ const SmartLink = forwardRef<HTMLAnchorElement, SmartLinkProps>(({
         if (isExternal) {
             return (
                 <a
+                    onMouseEnter={() => setLinkHover(true)}
+                    onMouseLeave={() => setLinkHover(false)} 
                     href={href}
                     target="_blank"
                     rel="noreferrer"
