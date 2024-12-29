@@ -11,6 +11,8 @@ import { Background, Flex } from '@/once-ui/components'
 
 import { Inter } from 'next/font/google'
 import { Roboto_Mono } from 'next/font/google';
+import { Header } from "@/once-ui/modules/layout/Header";
+import Footer from "./components/Footer";
 
 const primary = Inter({
 	variable: '--font-primary',
@@ -116,7 +118,28 @@ export default function RootLayout({
 					}}/>
 				<Flex
 					flex={1} direction="column">
-					{children}
+					<Flex
+						fillWidth paddingTop="s" paddingX="l"
+						direction="column" alignItems="center" flex={1}>
+						<Flex
+							position="relative"
+							as="section" overflow="hidden"
+							fillWidth minHeight="0" maxWidth={68}
+							direction="column" alignItems="center" flex={1}>
+							<Header />
+							<Flex
+								as="main"
+								direction="column" justifyContent="center"
+								fillWidth fillHeight padding="l" gap="l">
+								<Flex
+									mobileDirection="column"
+									fillWidth gap="48">
+									{children}
+								</Flex>
+							</Flex>      
+							<Footer />              
+						</Flex>
+					</Flex>
 				</Flex>
 			</Flex>
 		</Flex>

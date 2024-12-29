@@ -1,16 +1,14 @@
 'use client';
 
 import { Flex, SmartLink, Heading } from '@/once-ui/components';
-import { usePathname } from 'next/navigation';
 
 const Header= () => {
-    const pathname = usePathname() ?? '';
+    const routes: string[] = ["/experiences", "/projects", "/contact"]
 
     return (
         <Flex
             style={{
                 borderBottom: '1px solid var(--neutral-border-medium)',
-                lineHeight: "1"
             }}
             as="header"
             fillWidth height="56"
@@ -31,20 +29,14 @@ const Header= () => {
                 <Flex
                     textVariant="label-default-s"
                     fillWidth gap="4" paddingX="l"
-                    alignItems="center">
-                    <SmartLink
-                        href="/experiences" color="white">
-                        Experiences
-                    </SmartLink>
-                    <SmartLink
-                        href="/projects" color="white">
-                        Projects
-                    </SmartLink>
-                    <SmartLink
-                        href="/contact" color="white">
-                        Contact
-                    </SmartLink>
-                </Flex>
+                    alignItems="center">{
+                    routes.map(r => 
+                        <SmartLink
+                            href={r} color="white">
+                            {r[1].toUpperCase() + r.slice(2)}
+                        </SmartLink>
+                    )
+                }</Flex>
             </Flex>
         </Flex>
     );
