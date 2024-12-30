@@ -1,5 +1,7 @@
 const baseURL = 'demo.once-ui.com'
 
+const siteColor = "rgb(240, 73, 73)";
+
 // default customization applied to the HTML in the main layout.tsx
 const style = {
     theme:       'dark',        // dark | light
@@ -43,4 +45,4 @@ const social = {
     github: 'https://github.com/jjoej15'
 }
 
-export { baseURL, style, meta, og, schema, social };
+export { baseURL, style, meta, og, schema, social, siteColor };

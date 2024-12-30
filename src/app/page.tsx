@@ -5,10 +5,9 @@ import { useState } from 'react';
 
 import { Heading, Text, Flex, LetterFx, SmartLink } from '@/once-ui/components';
 import styles from "./styles/Home.module.sass"
-import Footer from './components/Footer';
 import Image from 'next/image';
-import { Header } from '@/once-ui/modules';
 import headshot from "./assets/images/headshot.jpg";
+import { siteColor } from '@/once-ui/resources/config';
 
 export default function Home() {
 	const [imageHover, setImageHover] = useState(false);
@@ -60,7 +59,7 @@ export default function Home() {
 					style={{ lineHeight: "1.5" }}>
 					<span>I'm currently a student at the </span>
 					<span><SmartLink 
-						href="" color="rgb(240, 73, 73)"
+						href="" color={siteColor}
 						style={{
 							padding: "0",
 							margin: "0",
@@ -77,7 +76,7 @@ export default function Home() {
 					style={{ lineHeight: "1.5" }}>
 					<span>I'm also a software engineering intern at </span>
 					<span><SmartLink 
-						href="" color="rgb(240, 73, 73)"
+						href="" color={siteColor}
 						style={{
 							padding: "0",
 							margin: "0",
@@ -88,7 +87,7 @@ export default function Home() {
 					</SmartLink></span>
 					<span> in partnership with </span>
 					<span><SmartLink 
-						href="" color="rgb(240, 73, 73)"
+						href="" color={siteColor}
 						style={{
 							padding: "0",
 							margin: "0",
@@ -107,7 +106,7 @@ export default function Home() {
 						Intelligence, and am seeking out research opportunities and potentially a Master's degree.
 						In my freetime I have worked on a variety of </span>
 					<span><SmartLink 
-						href="/projects" color="rgb(240, 73, 73)"
+						href="/projects" color={siteColor}
 						style={{
 							padding: "0",
 							margin: "0",
