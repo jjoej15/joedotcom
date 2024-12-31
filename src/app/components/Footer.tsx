@@ -18,7 +18,7 @@ const Footer = () => {
                 onBackground="neutral-weak">
                 Portfolio built using Next.js, TypeScript, SASS, and Once UI.
             </Text>
-            <LinkButtons />
+            <LinkButtons className={styles.links}  />
         </Flex>
     )
 }

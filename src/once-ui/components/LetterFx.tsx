@@ -107,7 +107,6 @@ const LetterFx = forwardRef<HTMLSpanElement, LetterFxProps>(({
 	}, [children, trigger, eventHandler, hasAnimated]);
 
 	useEffect(() => {
-		console.log(onTrigger);
 		if (trigger === 'custom' && onTrigger) {
 			onTrigger(eventHandler);
 		}

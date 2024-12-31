@@ -2,13 +2,13 @@
 
 import LinkButtons from '@/app/components/LinkButtons';
 import { Flex, SmartLink, Heading } from '@/once-ui/components';
+import styles from "./Header.module.sass";
 
 const Header= () => {
     const routes: string[] = ["/experiences", "/projects", "/contact"]
 
     return (
         <Flex
-            
             style={{
                 borderBottom: '1px solid var(--neutral-border-medium)',
                 flexShrink: "0"
@@ -35,7 +35,8 @@ const Header= () => {
                     alignItems="center">{
                     routes.map(r => 
                         <SmartLink
-                            href={r} color="white">
+                            href={r} key={r}
+                            color="white">
                             {r[1].toUpperCase() + r.slice(2)}
                         </SmartLink>
                     )
@@ -44,7 +45,7 @@ const Header= () => {
             <Flex
                 alignItems="center"
                 gap="8">
-                <LinkButtons />
+                <LinkButtons className={styles.links}  />
             </Flex>
         </Flex>
     );
