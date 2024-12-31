@@ -12,6 +12,7 @@ interface ExperienceProps {
     altText: string;
     company: string;
     expTitle: string;
+    dates: string;
     style?: CSSProperties;
 }
 
@@ -21,6 +22,7 @@ const Experience = ({
     altText,
     company,
     expTitle,
+    dates,
     style
 }: ExperienceProps) => {
     return (<>
@@ -53,7 +55,12 @@ const Experience = ({
                         <Text>
                             {expTitle}
                         </Text>
-                    </Flex>                
+                    </Flex>      
+                    <Flex
+                        position="relative" padding="8"
+                        style={{ marginLeft: "auto" }}>
+                        <p style={{ opacity: "100%" }}>{dates}</p>
+                    </Flex>          
                 </Flex>
                 <Text
                     align="justify"
