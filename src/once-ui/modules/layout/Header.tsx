@@ -7,12 +7,14 @@ const Header= () => {
 
     return (
         <Flex
+            
             style={{
                 borderBottom: '1px solid var(--neutral-border-medium)',
+                flexShrink: "0"
             }}
             as="header"
             fillWidth height="56"
-            alignItems="center"
+            alignItems="center" 
             >
             <Heading
                 wrap="nowrap" color='inherit'
