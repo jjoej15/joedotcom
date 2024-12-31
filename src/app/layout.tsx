@@ -124,18 +124,15 @@ export default function RootLayout({
 						<Flex
 							position="relative"
 							as="section" overflow="hidden"
-							fillWidth minHeight="0" maxWidth={68}
+							fillWidth maxWidth={68}
 							direction="column" alignItems="center" flex={1}>
 							<Header />
 							<Flex
-								as="main"
+								as="main" style={{ minHeight: "80vh" }}
 								direction="column" justifyContent="center"
-								fillWidth fillHeight padding="l" gap="l">
-								<Flex
-									mobileDirection="column"
-									fillWidth gap="48">
-									{children}
-								</Flex>
+								fillWidth fillHeight padding="l" gap="l"
+								marginBottom="xl">
+								{children}
 							</Flex>      
 							<Footer />              
 						</Flex>
