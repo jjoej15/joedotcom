@@ -5,6 +5,7 @@ import Experience from "../components/Experience";
 import { CSSProperties } from "react";
 import umnEmblem from "../assets/images/umn-emblem.png";
 import spsCommerceLogo from "../assets/images/sps-commerce-logo.png";
+import { experiences } from "./experiences";
 
 
 const Experiences = () => {
