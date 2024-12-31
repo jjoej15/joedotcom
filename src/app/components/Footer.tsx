@@ -1,7 +1,8 @@
 'use client';
 
-import { Flex, Text, Button, Arrow } from "@/once-ui/components";
+import { Flex, Text } from "@/once-ui/components";
 import styles from "../styles/Footer.module.sass"
+import LinkButtons from "./LinkButtons";
 
 const Footer = () => {
     return (
@@ -17,27 +18,7 @@ const Footer = () => {
                 onBackground="neutral-weak">
                 Portfolio built using Next.js, TypeScript, SASS, and Once UI.
             </Text>
-            <Flex
-                gap="12" className={styles.links}>
-                <Button
-                    id="github"
-                    href="https://github.com/jjoej15"
-                    prefixIcon="github" size="s" variant="tertiary">
-                    <Flex alignItems="center">
-                        GitHub
-                        <Arrow trigger="#github"/>
-                    </Flex>
-                </Button>
-                <Button
-                    id="linkedIn"
-                    href="https://www.linkedin.com/in/joe-anderson-dev/"
-                    prefixIcon="linkedIn" size="s" variant="tertiary">
-                    <Flex alignItems="center">
-                        LinkedIn
-                        <Arrow trigger="#linkedIn"/>
-                    </Flex>
-                </Button>
-            </Flex>
+            <LinkButtons />
         </Flex>
     )
 }

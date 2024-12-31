@@ -1,5 +1,6 @@
 'use client';
 
+import LinkButtons from '@/app/components/LinkButtons';
 import { Flex, SmartLink, Heading } from '@/once-ui/components';
 
 const Header= () => {
@@ -39,6 +40,11 @@ const Header= () => {
                         </SmartLink>
                     )
                 }</Flex>
+            </Flex>
+            <Flex
+                alignItems="center"
+                gap="8">
+                <LinkButtons />
             </Flex>
         </Flex>
     );
