@@ -1,9 +1,11 @@
-'use client';
-
 import { Flex, Heading, LetterFx } from "@/once-ui/components";
 import Experience from "../components/experiences/Experience";
 import { experiences } from "../assets/experiences";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+    title: "Experiences | Joe Anderson"
+}
 
 const Experiences = () => {
     const experienceList = experiences.sort((a, b) => a.rank < b.rank ? -1 : 1);

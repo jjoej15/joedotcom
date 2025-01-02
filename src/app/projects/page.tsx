@@ -1,8 +1,11 @@
-'use client';
-
 import { Flex, Heading, LetterFx } from "@/once-ui/components";
 import { projects } from "../assets/projects";
 import Project from "../components/projects/Project";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Projects | Joe Anderson"
+}
 
 const Projects = () => {
     const projectsList = projects.sort((a, b) => a.rank < b.rank ? -1 : 1);
