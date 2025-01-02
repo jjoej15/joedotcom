@@ -1,17 +1,13 @@
 'use client';
 
 import { Flex, Heading, LetterFx } from "@/once-ui/components";
-import Experience from "../components/Experience";
+import Experience from "../components/experiences/Experience";
 import { CSSProperties } from "react";
-import umnEmblem from "../assets/images/umn-emblem.png";
-import spsCommerceLogo from "../assets/images/sps-commerce-logo.png";
-import { experiences } from "./experiences";
+import { experiences } from "../assets/experiences";
 
 
 const Experiences = () => {
-    const style: CSSProperties = { // Experience component reads margin properties as SpacingTokens
-        marginBottom: "20"
-    }
+    const experienceList = experiences.sort((a, b) => a.rank < b.rank ? -1 : 1);
 
     return (<>
 		<Flex
@@ -33,27 +29,16 @@ const Experiences = () => {
                 </Heading>
             </Flex>
             <Flex
-                position="relative" direction="column">
-                <Experience 
-                    style={style} image={umnEmblem} 
-                    altText="Emblem for the University of Minnesota - Twin Cities" 
-                    company="University of Minnesota - Twin Cities"
-                    expTitle="Teaching Assistant" dates="January 2024 - May 2024"
-                    desc={`
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur perferendis molestias, harum omnis quasi alias repudiandae illum optio accusamus quibusdam fugit eaque, exercitationem fugiat! Qui provident voluptatibus totam asperiores?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae officiis totam minus dolorem omnis repellat, eaque et, nisi perspiciatis nemo, debitis adipisci non? Veniam accusamus minima neque molestias, voluptates debitis?
-                    `}/>
-                <Experience 
-                    style={style} image={spsCommerceLogo} altText="" dates="January 2024 - May 2024"
-                    desc={`
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur perferendis molestias, harum omnis quasi alias repudiandae illum optio accusamus quibusdam fugit eaque, exercitationem fugiat! Qui provident voluptatibus totam asperiores?
-                    `} company={""} expTitle={""}/>
-                <Experience  
-                    style={style} image={umnEmblem} altText="" dates="January 2024 - May 2024"
-                    desc={`
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur perferendis molestias, harum omnis quasi alias repudiandae illum optio accusamus quibusdam fugit eaque, exercitationem fugiat! Qui provident voluptatibus totam asperiores?
-                    `} company={""} expTitle={""}/>
-            </Flex>
+                position="relative" direction="column">{
+                experienceList.map(e => 
+                    <Experience
+                        style={{ marginBottom: "20" }} 
+                        image={e.image} dates={e.dates}
+                        altText={e.imageAltText} company={e.company}
+                        expTitle={e.expTitle} desc={e.description} 
+                        key={e.company + " " + e.dates} />
+                )
+            }</Flex>
         </Flex>
     </>)
 }

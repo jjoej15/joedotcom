@@ -27,7 +27,8 @@ const Experience = ({
 }: ExperienceProps) => {
     return (<>
         <Flex
-            position="relative" direction="column"
+            position="relative" direction="column" 
+            id={`${company.replaceAll(" ", "-")}-${dates.replaceAll(" ", "-")}`}
             marginBottom={style?.marginBottom as SpacingToken}
             style={style}>
             <Flex
