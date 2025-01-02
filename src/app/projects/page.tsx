@@ -1,10 +1,41 @@
 'use client';
 
-import { Flex } from "@/once-ui/components";
+import { Flex, Heading, LetterFx } from "@/once-ui/components";
+import { projects } from "../assets/projects";
+import Project from "../components/projects/Project";
 
 const Projects = () => {
+    const projectsList = projects.sort((a, b) => a.rank < b.rank ? -1 : 1);
+
     return (<>
-        <p>Projects page</p>
+		<Flex
+			direction="column" position="relative"
+			fillWidth>
+            <Flex
+                position="relative"
+                gap="24" marginBottom="16"
+                direction="column">
+                <Heading
+                    wrap="balance"
+                    variant="display-strong-s">
+                    <span className="font-code">
+                        <LetterFx
+                            trigger="hover">
+                            Projects
+                        </LetterFx>
+                    </span>
+                </Heading>
+            </Flex>
+            <Flex
+                position="relative" direction="column">{
+                projectsList.map(p => 
+                    <Project
+                        style= {{ marginBottom: "20" }} href={p.href}
+                        dates={p.dates} projTitle={p.projTitle}
+                        desc={p.description} key={p.id} id={p.id} />
+                )
+            }</Flex>
+        </Flex>
     </>)
 }
 

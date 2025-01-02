@@ -61,12 +61,12 @@ const Experience = ({
                     <Flex
                         position="relative" padding="8"
                         style={{ marginLeft: "auto" }}>
-                        <p style={{ opacity: "100%" }}>{dates}</p>
+                        <p>{dates}</p>
                     </Flex>          
                 </Flex>
                 <Text
                     align="justify"
-                    style={{ lineHeight: "1.5", opacity: "100%" }}>
+                    style={{ lineHeight: "1.5" }}>
                     <span>{desc}</span>
                 </Text>
             </Flex>

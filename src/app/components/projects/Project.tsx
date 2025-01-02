@@ -1,7 +1,7 @@
 'use client';
 
 import { SpacingToken } from "@/once-ui/types";
-import { Flex, Text } from "@/once-ui/components";
+import { Arrow, Button, Flex, Text } from "@/once-ui/components";
 import { CSSProperties } from "react";
 import { siteColor } from "@/once-ui/resources/config";
 
@@ -9,6 +9,8 @@ interface ProjectProps {
     desc: string;
     projTitle: string;
     dates: string;
+    id: string;
+    href: string;
     style?: CSSProperties;
 }
 
@@ -16,14 +18,15 @@ const Project = ({
     desc,
     projTitle,
     dates,
+    id,
+    href,
     style
 }: ProjectProps) => {
     return (<>
         <Flex
             position="relative" direction="column" 
-            id={`${projTitle.replaceAll(" ", "-")}`}
             marginBottom={style?.marginBottom as SpacingToken}
-            style={style}>
+            id={id} style={style}>
             <Flex
                 position="relative" direction="column">
                 <Flex
@@ -41,11 +44,19 @@ const Project = ({
                             {dates}
                         </Text>
                     </Flex>      
-                    {/* <Flex
+                    <Flex
                         position="relative" padding="8"
                         style={{ marginLeft: "auto" }}>
-                        <p style={{ opacity: "100%" }}>{dates}</p>
-                    </Flex>           */}
+                        <Button
+                            id={`${id}-learn-more`}
+                            href={href}
+                            size="s" variant="tertiary">
+                            <Flex alignItems="center">
+                                Learn More
+                                <Arrow trigger={`#${id}-learn-more`}/>
+                            </Flex>
+                        </Button>
+                    </Flex>          
                 </Flex>
                 <Text
                     align="justify"

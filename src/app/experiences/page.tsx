@@ -35,7 +35,7 @@ const Experiences = () => {
                         image={e.image} dates={e.dates} id={e.id}
                         altText={e.imageAltText} company={e.company}
                         expTitle={e.expTitle} desc={e.description} 
-                        key={e.company + " " + e.dates} />
+                        key={e.id} />
                 )
             }</Flex>
         </Flex>

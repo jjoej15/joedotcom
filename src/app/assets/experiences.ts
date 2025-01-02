@@ -3,7 +3,7 @@ import umnEmblem from "./images/umn-emblem.png";
 import spsCommerceLogo from "./images/sps-commerce-logo.png";
 import surlyLogo from "./images/surly-brewing-logo.png";
 
-export interface Experience {
+interface Experience {
     image: StaticImageData;
     imageAltText: string;
     company: string;
