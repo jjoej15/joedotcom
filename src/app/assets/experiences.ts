@@ -11,6 +11,7 @@ export interface Experience {
     description: string;
     rank: number; // For ordering the experiences on page
     dates: string;
+    id: string;
 }
 
 export const experiences: Experience[] = [
@@ -25,7 +26,8 @@ export const experiences: Experience[] = [
             with other TAs, and collaborated with course instructors to grade and revise homework assignments.
         `, 
         dates: "January 2024 - May 2024",
-        rank: 2
+        rank: 2,
+        id: "ta-exp"
     }, {
         image: spsCommerceLogo,
         imageAltText: "SPS Commerce logo",
@@ -39,7 +41,8 @@ export const experiences: Experience[] = [
             written in Python.
         `, 
         dates: "September 2024 - present",
-        rank: 1
+        rank: 1,
+        id: "sps-exp"
     }, {
         image: umnEmblem,
         imageAltText: "Emblem for the University of Minnesota - Twin Cities",
@@ -52,7 +55,8 @@ export const experiences: Experience[] = [
             Applied Linear Algebra, and Calculus 2.
         `,
         dates: "September 2022 - May 2026",
-        rank: 4
+        rank: 4,
+        id: "student-exp"
     }, {
         image: surlyLogo, 
         imageAltText: "Surly Brewing logo",
@@ -63,6 +67,7 @@ export const experiences: Experience[] = [
             in the food service industry. Worked within a fast-paced, highly collaborative, and fun work environment.
         `,
         dates: "September 2023 - September 2024",
-        rank: 3
+        rank: 3,
+        id: "surly-exp"
     }   
 ]

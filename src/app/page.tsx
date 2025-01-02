@@ -62,7 +62,8 @@ export default function Home() {
 						style={{ lineHeight: "1.5" }}>
 						<span>I'm currently a student at the </span>
 						<span><SmartLink 
-							href="" color={siteColor}
+							href="/experiences#student-exp" 
+							color={siteColor}
 							style={{
 								padding: "0",
 								margin: "0",
@@ -79,7 +80,7 @@ export default function Home() {
 						style={{ lineHeight: "1.5" }}>
 						<span>I'm also a software engineering intern at </span>
 						<span><SmartLink 
-							href="" color={siteColor}
+							href="/experiences#sps-exp" color={siteColor}
 							style={{
 								padding: "0",
 								margin: "0",
@@ -90,7 +91,7 @@ export default function Home() {
 						</SmartLink></span>
 						<span> in partnership with </span>
 						<span><SmartLink 
-							href="" color={siteColor}
+							href="/experiences#sps-exp" color={siteColor}
 							style={{
 								padding: "0",
 								margin: "0",

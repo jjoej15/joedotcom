@@ -13,6 +13,7 @@ interface ExperienceProps {
     company: string;
     expTitle: string;
     dates: string;
+    id: string;
     style?: CSSProperties;
 }
 
@@ -23,14 +24,14 @@ const Experience = ({
     company,
     expTitle,
     dates,
+    id,
     style
 }: ExperienceProps) => {
     return (<>
         <Flex
             position="relative" direction="column" 
-            id={`${company.replaceAll(" ", "-")}-${dates.replaceAll(" ", "-")}`}
             marginBottom={style?.marginBottom as SpacingToken}
-            style={style}>
+            id={id} style={style}>
             <Flex
                 position="relative" direction="column">
                 <Flex
