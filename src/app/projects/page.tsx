@@ -35,7 +35,8 @@ const Projects = () => {
                     <Project
                         style= {{ marginBottom: "20" }} href={p.href}
                         dates={p.dates} projTitle={p.projTitle}
-                        desc={p.description} key={p.id} id={p.id} />
+                        desc={p.description} key={p.id} id={p.id}
+                        image={p.image} altText={p.altText} />
                 )
             }</Flex>
         </Flex>

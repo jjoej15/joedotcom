@@ -4,9 +4,12 @@ import { SpacingToken } from "@/once-ui/types";
 import { Arrow, Button, Flex, Text } from "@/once-ui/components";
 import { CSSProperties } from "react";
 import { siteColor } from "@/once-ui/resources/config";
+import Image, { StaticImageData } from "next/image";
 
 interface ProjectProps {
     desc: string;
+    image: StaticImageData;
+    altText: string;
     projTitle: string;
     dates: string;
     id: string;
@@ -16,6 +19,8 @@ interface ProjectProps {
 
 const Project = ({
     desc,
+    image,
+    altText,
     projTitle,
     dates,
     id,
@@ -32,6 +37,15 @@ const Project = ({
                 <Flex
                     position="relative" marginBottom="4"
                     gap="20" alignItems="center">
+                    <Flex alignItems="center"
+                        style={{ height: "85px", width: "85px" }}>{ image.width > image.height ?
+                        <Image
+                            src={image} alt={altText}
+                            width={85}/>
+                        : <Image
+                            src={image} alt={altText}
+                            height={85}/>
+                    }</Flex>
                     <Flex
                         position="relative"
                         direction="column">
@@ -45,7 +59,7 @@ const Project = ({
                         </Text>
                     </Flex>      
                     <Flex
-                        position="relative" padding="8"
+                        position="relative" padding="8" direction="column"
                         style={{ marginLeft: "auto" }}>
                         <Button
                             id={`${id}-learn-more`}

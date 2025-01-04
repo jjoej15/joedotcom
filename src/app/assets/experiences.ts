@@ -1,7 +1,5 @@
 import { StaticImageData } from "next/image";
-import umnEmblem from "./images/umn-emblem.png";
-import spsCommerceLogo from "./images/sps-commerce-logo.png";
-import surlyLogo from "./images/surly-brewing-logo.png";
+import { umnEmblem, surlyLogo, spsCommerceLogo } from "./images";
 
 interface Experience {
     image: StaticImageData;

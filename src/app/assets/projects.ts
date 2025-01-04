@@ -1,3 +1,6 @@
+import { StaticImageData } from "next/image";
+import { fitDetectFav, letterboxdLogo, wingsLogo, porfolioFav } from "./images";
+
 interface Project {
     description: string;
     projTitle: string;
@@ -5,6 +8,8 @@ interface Project {
     rank: number;
     id: string;
     href: string;
+    image: StaticImageData;
+    altText: string;
 }
 
 export const projects: Project[] = [
@@ -14,6 +19,8 @@ export const projects: Project[] = [
         rank: 2,
         id: "letterboxd-recs-proj",
         href: "https://github.com/jjoej15/letterboxd-recs",
+        image: letterboxdLogo,
+        altText: "",
         description: `
             Built a web app that gives film recommendations for any Letterboxd user or a recommendation for two using Blend mode
             by implementing a collaborative filtering based machine learning model utilizing SVD factorization for dimensionality reduction. 
@@ -27,6 +34,8 @@ export const projects: Project[] = [
         rank: 1,
         id: "wings-proj",
         href: "/projects/wings",
+        image: wingsLogo,
+        altText: "",
         description: `
             Helping develop the UMN rocket team's proprietary WINGS software used for data analysis during and after rocket launches.
             Being a full stack engineering project, I'm contributing by helping build a robust memory-safe Rust back-end that supports 
@@ -41,6 +50,8 @@ export const projects: Project[] = [
         rank: 3,
         id: "fitdetect-proj",
         href: "https://github.com/jjoej15/outfit-detect-recs",
+        image: fitDetectFav,
+        altText: "",
         description: `
             Pre-processed over 30,000 images to help train a YOLOv8 object detection model to identify pieces of a user's outfit, 
             utilizing advancements in deep learning and computer vision. Used OpenCV for real-time outfit detection via webcam or 
@@ -54,6 +65,8 @@ export const projects: Project[] = [
         rank: 5,
         id: "letterboxd-hol-proj",
         href: "https://github.com/jjoej15/letterboxd-HoL",
+        image: letterboxdLogo,
+        altText: "",
         description: `
             Simple web application that allows users to compare Letterboxd movie ratings and guess which movie has a higher rating. 
             Inspired by the popular "Higher or Lower" game format, this project uses data scraped from Letterboxd.
@@ -64,6 +77,8 @@ export const projects: Project[] = [
         rank: 4,
         id: "portfolio-proj",
         href: "https://github.com/jjoej15/joedotcom",
+        image: porfolioFav,
+        altText: "",
         description: `
             A continuous project, I built this site to show off my work, school, and project experiences and also make it easier for
             potential employers or collaborators to get to know me. I also viewed it as an opportunity to enhance my web design skills.
