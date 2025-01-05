@@ -9,6 +9,9 @@ import letterboxdLogo from "./projects/letterboxd-logo.svg";
 import wingsLogo from "./projects/wings-logo.png";
 import porfolioFav from "./projects/portfolioFav.png";
 
+// Misc.
+import headshot from "./headshot.jpg";
+
 export { 
     umnEmblem,
     spsCommerceLogo,
@@ -16,5 +19,6 @@ export {
     fitDetectFav,
     letterboxdLogo,
     wingsLogo,
-    porfolioFav
+    porfolioFav,
+    headshot
 };

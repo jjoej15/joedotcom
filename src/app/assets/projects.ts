@@ -41,8 +41,8 @@ export const projects: Project[] = [
             Being a full stack engineering project, I'm contributing by helping build a robust memory-safe Rust back-end that supports 
             live telemetry reception through a USB port and handles data processing, and a front-end written in TypeScript for data visualization
             that features graph displays, indicator light displays, and more. Frameworks utilized include Tauri, SolidJS, and Tailwind CSS.
-            Helping to conduct end-to-end testing to ensure that the rest of the team can visualize and interpret data in order to fine-tune 
-            their projects.
+            Helping to conduct end-to-end testing to ensure that the rest of the team can confidently visualize and interpret data in order 
+            to fine-tune their projects.
         `
     }, {
         projTitle: "FitDetect - Outfit Detection + Recommendation System",
@@ -81,7 +81,7 @@ export const projects: Project[] = [
         altText: "",
         description: `
             A continuous project, I built this site to show off my work, school, and project experiences and also make it easier for
-            potential employers or collaborators to get to know me. I also viewed it as an opportunity to enhance my web design skills.
+            potential employers or collaborators to get to know me. I also viewed it as an opportunity to enhance my web development skills.
             As of right now it only has a front-end, which is written in TypeScript and built using Next.js and SASS for styling. For
             ease-of-development I decided to use a component library, and I went with Once UI because of it's emphasis on easy styling 
             and accessibility.

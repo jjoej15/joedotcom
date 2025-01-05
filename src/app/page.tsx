@@ -6,7 +6,7 @@ import { useState } from 'react';
 import { Heading, Text, Flex, LetterFx, SmartLink } from '@/once-ui/components';
 import styles from "./styles/Home.module.sass"
 import Image from 'next/image';
-import headshot from "./assets/images/headshot.jpg";
+import { headshot }  from "./assets/images";
 import { siteColor } from '@/once-ui/resources/config';
 
 export default function Home() {

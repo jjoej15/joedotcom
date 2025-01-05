@@ -54,7 +54,8 @@ const Experience = ({
                             style={{ color: siteColor, opacity: "85%" }}>
                             {company}
                         </Text>
-                        <Text>
+                        <Text
+                            style={{ opacity: "70%" }}>
                             {expTitle}
                         </Text>
                     </Flex>      

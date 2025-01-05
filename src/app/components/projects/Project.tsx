@@ -38,13 +38,13 @@ const Project = ({
                     position="relative" marginBottom="4"
                     gap="20" alignItems="center">
                     <Flex alignItems="center"
-                        style={{ height: "85px", width: "85px" }}>{ image.width > image.height ?
+                        style={{ height: "70px", width: "70px" }}>{ image.width > image.height ?
                         <Image
                             src={image} alt={altText}
-                            width={85}/>
+                            width={70}/>
                         : <Image
                             src={image} alt={altText}
-                            height={85}/>
+                            height={70}/>
                     }</Flex>
                     <Flex
                         position="relative"
@@ -54,7 +54,8 @@ const Project = ({
                             style={{ color: siteColor, opacity: "85%" }}>
                             {projTitle}
                         </Text>
-                        <Text>
+                        <Text
+                            style={{ opacity: "70%" }}>
                             {dates}
                         </Text>
                     </Flex>      
@@ -63,7 +64,7 @@ const Project = ({
                         style={{ marginLeft: "auto" }}>
                         <Button
                             id={`${id}-learn-more`}
-                            href={href}
+                            href={href} prefixIcon="infoCircle"
                             size="s" variant="tertiary">
                             <Flex alignItems="center">
                                 Learn More
