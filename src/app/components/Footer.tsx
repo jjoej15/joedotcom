@@ -16,7 +16,7 @@ const Footer = () => {
             <Text
                 variant="body-default-s" className={styles.text}
                 onBackground="neutral-weak">
-                Portfolio built using Next.js, TypeScript, SASS, and Once UI.
+                Portfolio built using Next.js, TypeScript, SASS, MDX, and Once UI.
             </Text>
             <LinkButtons className={styles.links}  />
         </Flex>
