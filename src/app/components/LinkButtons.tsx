@@ -24,6 +24,15 @@ const LinkButtons = ({ className }: { className: string; }) => {
                     <Arrow trigger={`#${className}-linkedIn`}/>
                 </Flex>
             </Button>
+            <Button
+                id={`${className}-resume`}
+                href="https://drive.google.com/file/d/1s-xh-vZrWlvYlilZMTM8_mcVhdw6pdlU/view?usp=sharing"
+                prefixIcon="HiOutlineDocumentText" size="s" variant="tertiary">
+                <Flex alignItems="center">
+                    Résumé
+                    <Arrow trigger={`#${className}-resume`}/>
+                </Flex>
+            </Button>
         </Flex>
     );
 }
