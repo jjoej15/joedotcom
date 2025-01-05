@@ -35,8 +35,9 @@ const Experience = ({
             <Flex
                 position="relative" direction="column">
                 <Flex
-                    position="relative" marginBottom="4"
-                    gap="20" alignItems="center">
+                    position="relative" marginBottom="8"
+                    gap="20" alignItems="center" paddingBottom="12"
+                    style={{ borderBottom: '1px solid var(--neutral-border-medium)' }}>
                     <Flex alignItems="center"
                         style={{ height: "85px", width: "85px" }}>{ image.width > image.height ?
                         <Image

@@ -35,8 +35,9 @@ const Project = ({
             <Flex
                 position="relative" direction="column">
                 <Flex
-                    position="relative" marginBottom="4"
-                    gap="20" alignItems="center">
+                    position="relative" marginBottom="12"
+                    gap="20" alignItems="center" paddingBottom="12"
+                    style={{ borderBottom: '1px solid var(--neutral-border-medium)' }}>
                     <Flex alignItems="center"
                         style={{ height: "70px", width: "70px" }}>{ image.width > image.height ?
                         <Image
