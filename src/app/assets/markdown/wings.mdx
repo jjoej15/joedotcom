@@ -1,10 +1,11 @@
 import { boolLights, boolLightsSettings, beforeCrc, afterCrc } from "../images";
+import styles from "../../styles/Wings.module.sass";
 
 WINGS is the UMN Rocket Team's proprietary software that's used for data analysis during and after rocket launches. I joined
 the team at the start of my junior year (September 2024), and have since helped contribute to building the software's robust
 memory and type safe back-end using Rust and the front-end using TypeScript. The software supports both live telemetry reception
-through a USB port and also playback of data from previous launches through various file formats. The front-end can display processed 
-data for visualization with its graph, indicator light, and readout displays.
+through a USB port and also playback of data from previous launches through different file formats. The front-end can display 
+processed data for visualization with its graph, indicator light, and readout displays.
 
 <Heading
     wrap="balance" as="h2"
@@ -17,7 +18,7 @@ data for visualization with its graph, indicator light, and readout displays.
 
 
 <Heading
-    id="#personal-contributions"
+    id="personal-contributions"
     wrap="balance" as="h2"
     marginTop="24" marginBottom="12">
     Personal Contributions
@@ -36,12 +37,12 @@ or turn red otherwise
 <Flex
     direction='column' alignItems="center"
     position="relative" padding="32">
-    <b>Indicator light settings modal</b>
+    <b className={styles.b}>Indicator light settings modal</b>
     <Image 
         src={boolLightsSettings} height={300} layout="responsive"
         style={{ marginTop: "8px", marginBottom: "20px" }}
         alt="Indicator light settings modal in WINGS software" />
-    <b>Indicator lights changing colors based on incoming data</b>
+    <b className={styles.b}>Indicator lights changing colors based on incoming data</b>
     <Image
         src={boolLights} height={300} layout="responsive"
         style={{ marginTop: "8px" }}
@@ -56,18 +57,18 @@ or turn red otherwise
 I added checksum calculations to detect accidental changes/errors in incoming telemetry data in our Altus Metrum/AltOS file handler. 
 The rocket team uses Altus Metrum products like the TeleMetrum altimeter with GPS and RF telemetry link and the TeleDongle which is 
 used on the ground station to interact with the rockets. By adding CRC checking for AltOS packets, I was able to filter out bad packets 
-sent using these products and drastically enhance the display of rocket data. This WINGS feature works for both live data sent from the 
+sent using these products and remarkably enhance the display of rocket data. This WINGS feature works for both live data sent from the 
 TeleMetrum and data saved to a file.
 
 <Flex
     direction='column' alignItems="center"
     position="relative" padding="32" >
-    <b>Graph displaying data before checksum calculations</b>
+    <b className={styles.b}>Graph displaying data before checksum calculations</b>
     <Image 
         src={beforeCrc} width={900} layout="responsive"
         style={{ marginTop: "8px", marginBottom: "20px" }}
         alt="Line graph displaying data in WINGS software, including outlier data points that makes graph unreadable" />
-    <b>Graph displaying data after checksum calculations</b>
+    <b className={styles.b}>Graph displaying data after checksum calculations</b>
     <Image
         src={afterCrc} width={900}
         style={{ marginTop: "8px" }} layout="responsive"
@@ -76,11 +77,21 @@ TeleMetrum and data saved to a file.
 
 <h3 
     style={{ marginTop: "17px", marginBottom: "15px" }}>
-    Improved Settings Modals
+    Other Contributions
 </h3>
 
+Other contributions I've made to the project include improving the functionality and styling of all of the settings modals for the
+displays, adding help text/documentation throughout to improve software ease-of-use, conducting end-to-end testing to ensure implemented
+features work, and other various small front-end improvements. One of the most rewarding aspects of working on this project has been
+being able to develop software within a collaborate, team environment. \
+\
+Currently, I'm creating new graphs that would be used for realtime 
+display of time-series data. The new graphs will work by displaying new data on the right while pushing out old data to the left, 
+creating a sliding window effect.
+
+
 <Heading
-    id="#technologies-used"
+    id="technologies-used"
     wrap="balance" as="h2"
     marginTop="24" marginBottom="4">
     Technologies Used

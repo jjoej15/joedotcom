@@ -8,11 +8,11 @@ const Markdown = ({ MDX, components }: {
     components?: MDXComponents
 }) => {
     return (
-        <div
+        <article
             className={styles.markdownWrapper}>
             <MDX 
                 components={components} />
-        </div>
+        </article>
     )
 }
 

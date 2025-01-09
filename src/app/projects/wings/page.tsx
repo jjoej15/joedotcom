@@ -4,13 +4,13 @@ import { Flex, Heading, LetterFx, SmartLink } from "@/once-ui/components";
 import WingsMDX from "../../assets/markdown/wings.mdx";
 import Markdown from "@/app/components/Markdown";
 import Image from 'next/image';
-import styles from "../../styles/Wings.module.sass";
+import Link from "next/link";
 
 const Wings = () => {
     return (
 		<Flex
 			direction="column" position="relative"
-			fillWidth >
+			fillWidth>
             <Flex
                 position="relative"
                 gap="24" marginBottom="16"
@@ -29,7 +29,7 @@ const Wings = () => {
             </Flex>
             <Markdown
                 MDX={WingsMDX}
-                components={{ Heading, Flex, Image }} />
+                components={{ Heading, Flex, Image, Link }} />
         </Flex>
     )
 }
