@@ -7,7 +7,7 @@ import LinkButtons from "./LinkButtons";
 const Footer = () => {
     return (
         <Flex
-            as="footer"
+            as="footer" alignItems="center"
             position="relative"
             fillWidth paddingX="l" paddingY="m"
             justifyContent="space-between"

@@ -1,6 +1,6 @@
 'use client';
 
-import { Flex, Heading, LetterFx, SmartLink } from "@/once-ui/components";
+import { Flex, Heading, LetterFx } from "@/once-ui/components";
 import WingsMDX from "../../assets/markdown/wings.mdx";
 import Markdown from "@/app/components/Markdown";
 import Image from 'next/image';
