@@ -1,6 +1,6 @@
 {
-	"name": "@once-ui-system/nextjs-starter",
-	"version": "0.4.1",
+	"name": "joe-anderson-dev-portfolio-site",
+	"version": "1.0.0",
 	"scripts": {
 		"dev": "next dev",
 		"export": "next export",
