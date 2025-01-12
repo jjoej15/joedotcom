@@ -1,4 +1,4 @@
-const baseURL = 'demo.once-ui.com'
+const baseURL = 'www.joejanderson.dev'
 
 const siteColor = "rgb(240, 73, 73)";
 
