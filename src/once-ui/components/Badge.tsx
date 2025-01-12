@@ -5,6 +5,7 @@ import { Arrow, Flex, Icon, SmartLink, Text } from '.';
 
 import styles from './Badge.module.scss'
 import classNames from 'classnames';
+import { siteColor } from '../resources/config';
 
 interface BadgeProps extends React.HTMLAttributes<HTMLDivElement> {
     title?: string;
@@ -63,6 +64,7 @@ const Badge = forwardRef<HTMLDivElement | HTMLAnchorElement, BadgeProps>(({
         return (
             <SmartLink
                 unstyled
+                color={siteColor}
                 style={{borderRadius: 'var(--radius-full)'}}
                 href={href}
                 ref={ref as React.Ref<HTMLAnchorElement>}
