@@ -32,7 +32,6 @@ const og = {
 
 // default schema data
 const schema = {
-    logo: '',
     type: 'Individual',
     name: 'Joe Anderson',
     description: 'A portfolio website for Joe Anderson, a developer and undergraduate student at the University of Minnesota.',

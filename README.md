@@ -1,48 +1,75 @@
-# **Once UI for Next.js**
+# Portfolio Website
 
-<span style="font-size: 22px;">Once UI is a lightweight, versatile design system with easy customization and practical components.
-<br>
+A continuous project, I built this site to show off my work, school, and project experiences and also make it easier for
+potential employers or collaborators to get to know me. I also viewed it as an opportunity to enhance my web development skills.
+As of right now it only has a front-end, which is written in TypeScript and built using Next.js, MDX, and SASS for styling. For
+ease-of-development I decided to use a component library, and I went with Once UI because of it's emphasis on easy styling 
+and accessibility. Website deployed at 
 
-![Once UI](public/images/cover.png)
+## Table of Contents
 
-<span style="font-size: 18px;">Start building your Next.js app in minutes with:</span> 
-* **A robust token and style system** that simplifies customization and ensures consistency. 
-* **A copy-and-paste component library** that integrates seamlessly into your project.
-* **Interactive documentation** to apply your branding and set component properties.
-<br><br>
+- [Local Installation](#local-installation)
+- [Development](#development)
+- [Technologies Used](#technologies-used)
 
-# **Documentation**
-The documentation is available at [once-ui.com/docs](https://once-ui.com/docs).
-<br><br>
+## Local Installation
+This requires you to have Git and Node.js installed.
 
-# **Authors**
-Connect with us!
+To run the front-end locally, follow these steps:
 
-Lorant One: [Site](https://lorant.one), [Threads](https://www.threads.net/@lorant.one), [LinkedIn](https://www.linkedin.com/in/lorant-one/)  
-Zsofia Komaromi: [Site](https://zsofia.pro), [Threads](https://www.threads.net/@zsofia_kom), [LinkedIn](https://www.linkedin.com/in/zsofiakomaromi/)
-<br><br>
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/jjoej15/joedotcom.git
+   cd joedotcom
+   ```
 
-# **Get involved**
-- Join the [Design Engineers Club](https://discord.com/invite/5EyAQ4eNdS) on Discord to connect with designers, developers and share your projects.
-- Report a [bug](https://github.com/once-ui-system/nextjs-starter/issues/new?labels=bug&template=bug_report.md).
-- Submit a [feature request](https://github.com/once-ui-system/nextjs-starter/issues/new?labels=feature%20request&template=feature_request.md).
-<br><br>
+2. **Install dependencies and start development server:**
+   ```sh
+   npm install
+   npm run dev
+   ```
 
-# **License**
+3. **Open on local server**
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-<br><br>
+## Development
 
-# **Once UI for Figma**
+Feel free to use the source code for this site as a template. Here's how you can customize the content and create your own portfolio website:
 
-Once UI is also available for Figma.  
-Design and prototype entire products from scratch in hours. Use the same tokens and components as the Next.js design system.
+### Site Layout and Styling
+- Navigate to ```src/app/layout.tsx``` to edit site layout
+- Navigate to ```src/once-ui/resources/config.js``` to edit themes, default styling, and metadata
+- Navigate to ```public/images``` and replace ```favicon.ico``` to change website favicon
+- Edit SASS files in ```src/app/styles``` to change styling for specific components
 
-Grab a copy from the [Figma Community](https://figma.com/).
-<br><br>
+### Home Page
+- Navigate to ```src/app/page.tsx``` to change Home page bio
+- Navigate to ```src/app/assets/images``` and replace ```headshot.jpg``` to change Home page headshot image
+- Navigate to ```src/once-ui/modules/layout/Header.rsx``` to change site title in site header
+- Navigate to ```src/app/components/LinkButtons.tsx``` to change site link buttons in Header and Footer
+- Navigate to ```src/app/components/Footer.tsx``` to change Footer
 
-# **Deploy your project**
+### Experiences
+- Navigate to ```src/app/assets/experiences.ts``` to edit experiences on Experiences page
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/76DR9Q?referralCode=QW2HBC)
+### Projects
+- Navigate to ```src/app/assets/projects.ts``` to edit projects on Projects page
+- To create custom projects pages, create new folder in ```src/app/projects```
+- Then create ```page.tsx``` inside new folder 
+- Copy + paste code from ```src/app/projects/wings/page.tsx``` into ```page.tsx``` to get started
+- Navigate to ```src/app/assets/markdown``` to create MDX markdown content to embed into specific project pages
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fnextjs-starter&redirect-url=https%3A%2F%2Fonce-ui.com%2Fdocs%2F)
+### Contact
+- Navigate to ```src/app/contact/page.tsx``` to edit contact infomation on Contact page
+
+### Images
+- Add images into ```src/app/assets/images```
+- Edit ```src/app/assets/images/index.ts``` to use easily import images throughout project
+
+## Technologies Used
+
+- Front-end code written in [**TypeScript**](https://www.typescriptlang.org/)
+- [**Next.js**](https://nextjs.org/) as a reactive web framework
+- [**SASS**](https://sass-lang.com/) for easy styling
+- [**MDX**](https://mdxjs.com/) for creating markdown content with JSX components
+- [**Once UI**](https://once-ui.com/) for their component library
+- Website deployed to [**Vercel**](https://vercel.com/)

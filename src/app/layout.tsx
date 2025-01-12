@@ -72,7 +72,6 @@ const schemaData = {
 	"@context": "https://schema.org",
 	"@type": schema.type,
 	"url": "https://" + baseURL,
-	"logo": schema.logo,
 	"name": schema.name,
 	"description": schema.description,
 	"email": schema.email,

@@ -30,9 +30,9 @@ processed data for visualization with its graph, indicator light, and readout di
 </h3>
 
 My first major contribution was creating the boolean indicator light display for the front-end. This included creating both the
-display and the settings modal. The boolean indicator lights help users monitor variables by using display lights
+settings modal and the display itself. The boolean indicator lights help users monitor variables by using display lights
 to indicate whether the incoming data satisfies the specified inequalities or not. The lights turn green when the conditions are met,
-or turn red otherwise
+or turn red otherwise.
 
 <Flex
     direction='column' alignItems="center"
@@ -54,9 +54,9 @@ or turn red otherwise
     Altus Metrum Checksum
 </h3>
 
-I added checksum calculations to detect accidental changes/errors in incoming telemetry data in our Altus Metrum/AltOS file handler. 
+In my first back-end project, I added checksum calculations to detect accidental changes/errors in incoming telemetry data in our Altus Metrum/AltOS file handler. 
 The rocket team uses Altus Metrum products like the TeleMetrum altimeter with GPS and RF telemetry link and the TeleDongle which is 
-used on the ground station to interact with the rockets. By adding CRC checking for AltOS packets, I was able to filter out bad packets 
+used on the ground station to interact with the rockets. By adding checksum calculations for AltOS packets, I was able to filter out bad packets 
 sent using these products and remarkably enhance the display of rocket data. This WINGS feature works for both live data sent from the 
 TeleMetrum and data saved to a file.
 
@@ -101,14 +101,14 @@ creating a sliding window effect.
     style={{ marginTop: "20px", marginBottom: "15px" }}>
     Front End
 </h3>
-- TypeScript
-- SolidJS as a reactive JS library
-- Tailwind CSS for styling
-- Tauri software framework
+- **TypeScript**
+- **SolidJS** as a reactive JS library
+- **Tailwind CSS** for styling
+- **Tauri** software framework
 
 <h3
     style={{ marginTop: "25px", marginBottom: "15px" }}>
     Back End
 </h3>
-- Rust
-- Tauri software framework
+- **Rust**
+- **Tauri** software framework
