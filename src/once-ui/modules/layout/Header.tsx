@@ -27,7 +27,7 @@ const Header= () => {
                 </SmartLink>
             </Heading>
             <Flex
-                fillWidth
+                fillWidth paddingY="s"
                 alignItems="center" justifyContent="flex-end">
                 <Flex
                     textVariant="label-default-s"
