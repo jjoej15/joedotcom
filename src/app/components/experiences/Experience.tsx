@@ -52,7 +52,11 @@ const Experience = ({
                         direction="column">
                         <Text
                             as="h3" paddingBottom="8"
-                            style={{ color: siteColor, opacity: "85%" }}>
+                            style={{ 
+                                color: siteColor, 
+                                opacity: "85%", 
+                                wordBreak: "break-word" 
+                            }}>
                             {company}
                         </Text>
                         <Text

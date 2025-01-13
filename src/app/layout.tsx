@@ -116,7 +116,7 @@ export default function RootLayout({
 						opacity: 1,
 					}}/>
 				<Flex
-					flex={1} direction="column">
+					flex={1} direction="column" fillWidth>
 					<Flex
 						fillWidth paddingTop="s" paddingX="l"
 						direction="column" alignItems="center" flex={1}>

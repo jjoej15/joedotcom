@@ -51,8 +51,12 @@ const Project = ({
                         position="relative"
                         direction="column">
                         <Text
-                            as="h3" paddingBottom="8"
-                            style={{ color: siteColor, opacity: "85%" }}>
+                            as="h3" paddingBottom="8" 
+                            style={{ 
+                                color: siteColor, 
+                                opacity: "85%",
+                                wordBreak: "break-word" 
+                            }}>
                             {projTitle}
                         </Text>
                         <Text
