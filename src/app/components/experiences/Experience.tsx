@@ -71,7 +71,6 @@ const Experience = ({
                     </Flex>          
                 </Flex>
                 <Text
-                    align="justify"
                     style={{ lineHeight: "1.5" }}>
                     <span>{desc}</span>
                 </Text>

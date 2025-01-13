@@ -58,7 +58,7 @@ export default function Home() {
 				<Flex
 					position="relative" direction="column">
 					<Text
-						marginBottom='20' align="justify"
+						marginBottom='20'
 						style={{ lineHeight: "1.5" }}>
 						<span>I'm currently a student at the </span>
 						<span><SmartLink 
@@ -76,7 +76,7 @@ export default function Home() {
 							a Bachelor of Science in Computer Science with a minor in Statistics.</span>
 					</Text>
 					<Text
-						marginBottom='20' align="justify"
+						marginBottom='20'
 						style={{ lineHeight: "1.5" }}>
 						<span>I'm also a software engineering intern at </span>
 						<span><SmartLink 
@@ -104,7 +104,7 @@ export default function Home() {
 							to be integrated into our customers' ERP systems.</span>
 					</Text>
 					<Text
-						marginBottom='20' align="justify"
+						marginBottom='20'
 						style={{ lineHeight: "1.5" }}>
 						<span>I'm most interested in Machine Learning and Artificial 
 							Intelligence, and am seeking out research opportunities and potentially a Master's degree.

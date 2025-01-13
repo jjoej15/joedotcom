@@ -4,7 +4,6 @@ import { Flex, Heading, LetterFx } from "@/once-ui/components";
 import WingsMDX from "../../assets/markdown/wings.mdx";
 import Markdown from "@/app/components/Markdown";
 import Image from 'next/image';
-import Link from "next/link";
 
 const Wings = () => {
     return (
@@ -29,7 +28,7 @@ const Wings = () => {
             </Flex>
             <Markdown
                 MDX={WingsMDX}
-                components={{ Heading, Flex, Image, Link }} />
+                components={{ Heading, Flex, Image }} />
         </Flex>
     )
 }

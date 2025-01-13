@@ -30,7 +30,7 @@ const Contact = () => {
             <Flex
                 position="relative" direction="column">
                 <Text 
-                    marginBottom='20' align="justify"
+                    marginBottom='20'
 					style={{ lineHeight: "1.5" }}>
                     <span>The best ways to contact me are to email me at </span>
                     <span><SmartLink 
@@ -57,7 +57,7 @@ const Contact = () => {
                     <span>, or call me at 507-414-2000. I should be able to respond within a day.</span>
                 </Text>
                 <Text 
-                    marginBottom='20' align="justify"
+                    marginBottom='20'
 					style={{ lineHeight: "1.5" }}>
                     <span>Feel free to take a look at or download my </span>
                     <span><SmartLink 
@@ -86,7 +86,6 @@ const Contact = () => {
                     <span> profile.</span>
                 </Text>
                 <Text 
-                    align="justify"
 					style={{ lineHeight: "1.5" }}>
                     If you're interested in discussing work opportunities, inquiring about one of my projects,
                     or collaborating on something together, don't be afraid to reach out!

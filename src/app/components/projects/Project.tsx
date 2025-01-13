@@ -79,7 +79,6 @@ const Project = ({
                     </Flex>          
                 </Flex>
                 <Text
-                    align="justify"
                     style={{ lineHeight: "1.5", opacity: "100%" }}>
                     <span>{desc}</span>
                 </Text>
