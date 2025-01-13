@@ -13,6 +13,7 @@ import { Inter } from 'next/font/google'
 import { Roboto_Mono } from 'next/font/google';
 import { Header } from "@/once-ui/modules/layout/Header";
 import Footer from "./components/Footer";
+import styles from "./styles/Layout.module.sass";
 
 const primary = Inter({
 	variable: '--font-primary',
@@ -130,7 +131,7 @@ export default function RootLayout({
 								as="main" style={{ minHeight: "80vh" }}
 								direction="column" justifyContent="center"
 								fillWidth fillHeight padding="l" gap="l"
-								marginBottom="xl">
+								marginBottom="xl" className={styles.main}>
 								{children}
 							</Flex>      
 							<Footer />              
