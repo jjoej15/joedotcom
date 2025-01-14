@@ -1,5 +1,9 @@
 import { Arrow, Button, Flex } from '@/once-ui/components'
-import Link from 'next/link'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: "Not Found | Joe Anderson"
+}
  
 export default function NotFound() {
   return (
@@ -11,11 +15,11 @@ export default function NotFound() {
             <h1>404 - Not Found</h1>
             <Button
                 id={`go-home-404`}
-                href="/"
+                href="/" prefixIcon='HiMiniHome'
                 size="s" variant="tertiary">
                 <Flex alignItems="center">
-                    Return Home
-                    <Arrow trigger={`#go-home-404`}/>
+                  Return Home
+                  <Arrow trigger={`#go-home-404`}/>
                 </Flex>
             </Button>            
         </Flex>

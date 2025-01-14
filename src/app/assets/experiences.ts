@@ -50,7 +50,8 @@ export const experiences: Experience[] = [
             Currently working towards a B.S. in Computer Science with a minor in Statistics. A member of the UMN Rocket Team, 
             I help develop the team's ground station software for fun. Some relevant courses I've taken include Algorithms &
             Data Structures, Intro to Operating Systems, Machine Learning Fundamentals, Machine Organization & Architecture, 
-            Applied Linear Algebra, and Calculus 2.
+            Applied Linear Algebra, and Calculus 2. I've been listed to the College of Science & Engineering's Dean's List 
+            for 8 consecutive semesters.
         `,
         dates: "September 2022 - May 2026",
         rank: 4,
