@@ -22,7 +22,7 @@ export const projects: Project[] = [
         image: letterboxdLogo,
         altText: "",
         description: `
-            Built a web app that gives film recommendations for any Letterboxd user or a recommendation for two using Blend mode
+            Data scraping project and web app that gives film recommendations for any Letterboxd user or a recommendation for two using Blend mode
             by implementing a collaborative filtering based machine learning model utilizing SVD factorization for dimensionality reduction. 
             Users can include filters such as film popularity, film genre, and films  in user's watchlist. Used asynchronous web
             scraping techniques to collect ratings data from over 5,000 Letterboxd users, resulting in a dataset of approximately 13,000,000
