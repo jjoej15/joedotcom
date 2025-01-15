@@ -4,7 +4,7 @@ A continuous project, I built this site to show off my work, school, and project
 potential employers or collaborators to get to know me. I also viewed it as an opportunity to enhance my web development skills.
 As of right now it only has a front-end, which is written in TypeScript and built using Next.js, MDX, and SASS for styling. For
 ease-of-development I decided to use a component library, and I went with Once UI because of it's emphasis on easy styling 
-and accessibility. Website deployed at https://www.joejanderson.dev
+and accessibility. Website deployed at https://joejanderson.dev
 
 ## Table of Contents
 
@@ -63,7 +63,7 @@ Feel free to use the source code for this site as a template. Having a working k
 
 ### Images
 - Add images into ```src/app/assets/images```
-- Edit ```src/app/assets/images/index.ts``` to use easily import images throughout project
+- Edit ```src/app/assets/images/index.ts``` to easily import images throughout project
 
 ## Technologies Used
 
