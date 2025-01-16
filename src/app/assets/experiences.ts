@@ -51,7 +51,7 @@ export const experiences: Experience[] = [
             I help develop the team's ground station software for fun. Some relevant courses I've taken include Algorithms &
             Data Structures, Intro to Operating Systems, Machine Learning Fundamentals, Machine Organization & Architecture, 
             Applied Linear Algebra, and Calculus 2. I've been listed on the College of Science & Engineering's Dean's List 
-            for 8 consecutive semesters.
+            for 4 consecutive semesters.
         `,
         dates: "September 2022 - May 2026",
         rank: 4,
