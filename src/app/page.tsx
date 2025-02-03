@@ -119,7 +119,7 @@ export default function Home() {
 							}}>
 							projects
 						</SmartLink></span>
-						<span>, and also enjoy producing music, reading fiction, skiing, fashion, and guitars.</span>
+						<span>, and also enjoy producing music, reading fiction, skiing, and guitars.</span>
 					</Text>
 				</Flex>
 			</Flex>
