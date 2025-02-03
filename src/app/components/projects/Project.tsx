@@ -5,6 +5,7 @@ import { Arrow, Button, Flex, Text } from "@/once-ui/components";
 import { CSSProperties } from "react";
 import { siteColor } from "@/once-ui/resources/config";
 import Image, { StaticImageData } from "next/image";
+import styles from "../../styles/Project.module.sass"
 
 interface ProjectProps {
     desc: string;
@@ -70,9 +71,12 @@ const Project = ({
                         <Button
                             id={`${id}-learn-more`}
                             href={href} prefixIcon="infoCircle"
-                            size="s" variant="tertiary">
-                            <Flex alignItems="center">
-                                Learn More
+                            size="s" variant="tertiary" className={styles.learnBtn}>
+                            <Flex 
+                                direction={window.innerWidth <= 470 ? "column" : "row"}
+                                alignItems="center">
+                                <span>{window.innerWidth > 470 ? "Learn " : "Learn"}</span>
+                                <span>More</span>
                                 <Arrow trigger={`#${id}-learn-more`}/>
                             </Flex>
                         </Button>
