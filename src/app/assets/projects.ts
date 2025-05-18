@@ -5,7 +5,6 @@ interface Project {
     description: string;
     projTitle: string;
     dates: string;
-    rank: number;
     id: string;
     href: string;
     image: StaticImageData;
@@ -16,7 +15,6 @@ export const projects: Project[] = [
     {
         projTitle: "Letterboxd Recommendation System",
         dates: "June 2024 - July 2024",
-        rank: 2,
         id: "letterboxd-recs-proj",
         href: "https://github.com/jjoej15/letterboxd-recs",
         image: letterboxdLogo,
@@ -31,7 +29,6 @@ export const projects: Project[] = [
     }, {
         projTitle: "WINGS Ground Station",
         dates: "September 2024 - present",
-        rank: 1,
         id: "wings-proj",
         href: "/projects/wings",
         image: wingsLogo,
@@ -47,7 +44,6 @@ export const projects: Project[] = [
     }, {
         projTitle: "FitDetect - Outfit Detection + Recommendation System",
         dates: "July 2024 - August 2024",
-        rank: 3,
         id: "fitdetect-proj",
         href: "https://github.com/jjoej15/outfit-detect-recs",
         image: fitDetectFav,
@@ -62,7 +58,6 @@ export const projects: Project[] = [
     }, {
         projTitle: "Letterboxd Higher or Lower Game",
         dates: "May 2024 - June 2024",
-        rank: 5,
         id: "letterboxd-hol-proj",
         href: "https://github.com/jjoej15/letterboxd-HoL",
         image: letterboxdLogo,
@@ -74,7 +69,6 @@ export const projects: Project[] = [
     }, {
         projTitle: "Portfolio Website",
         dates: "December 2024 - present",
-        rank: 4,
         id: "portfolio-proj",
         href: "https://github.com/jjoej15/joedotcom",
         image: portfolioFav,
@@ -89,7 +83,6 @@ export const projects: Project[] = [
     }, {
         projTitle: "Intelligent Agents for Three Player Otrio",
         dates: "March 2025 - May 2025",
-        rank: 4,
         id: "otrio-proj",
         href: "",
         image: otrioLogo,

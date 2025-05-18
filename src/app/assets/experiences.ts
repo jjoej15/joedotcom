@@ -7,7 +7,6 @@ interface Experience {
     company: string;
     expTitle: string;
     description: string;
-    rank: number; // For ordering the experiences on page
     dates: string;
     id: string;
 }
@@ -24,7 +23,6 @@ export const experiences: Experience[] = [
             with other TAs, and collaborated with course instructors to grade and revise homework assignments.
         `, 
         dates: "January 2024 - May 2024",
-        rank: 2,
         id: "ta-exp"
     }, {
         image: spsCommerceLogo,
@@ -39,7 +37,6 @@ export const experiences: Experience[] = [
             written in Python.
         `, 
         dates: "September 2024 - present",
-        rank: 1,
         id: "sps-exp"
     }, {
         image: umnEmblem,
@@ -54,7 +51,6 @@ export const experiences: Experience[] = [
             for 4 consecutive semesters.
         `,
         dates: "September 2022 - May 2026",
-        rank: 4,
         id: "student-exp"
     }, {
         image: surlyLogo, 
@@ -66,7 +62,6 @@ export const experiences: Experience[] = [
             in the food service industry. Worked within a fast-paced, highly collaborative, and fun work environment.
         `,
         dates: "September 2023 - September 2024",
-        rank: 3,
         id: "surly-exp"
     }   
 ]

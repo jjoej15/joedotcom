@@ -8,8 +8,6 @@ export const metadata: Metadata = {
 }
 
 const Experiences = () => {
-    const experienceList = experiences.sort((a, b) => a.rank < b.rank ? -1 : 1);
-
     return (<>
 		<Flex
 			direction="column" position="relative"
@@ -31,7 +29,7 @@ const Experiences = () => {
             </Flex>
             <Flex
                 position="relative" direction="column">{
-                experienceList.map(e => 
+                experiences.map(e => 
                     <Experience
                         style={{ marginBottom: "20" }} 
                         image={e.image} dates={e.dates} id={e.id}

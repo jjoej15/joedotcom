@@ -8,8 +8,6 @@ export const metadata: Metadata = {
 }
 
 const Projects = () => {
-    const projectsList = projects.sort((a, b) => a.rank < b.rank ? -1 : 1);
-
     return (<>
 		<Flex
 			direction="column" position="relative"
@@ -31,7 +29,7 @@ const Projects = () => {
             </Flex>
             <Flex
                 position="relative" direction="column">{
-                projectsList.map(p => 
+                projects.map(p => 
                     <Project
                         style= {{ marginBottom: "20" }} href={p.href}
                         dates={p.dates} projTitle={p.projTitle}
