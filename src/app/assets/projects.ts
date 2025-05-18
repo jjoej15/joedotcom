@@ -1,5 +1,5 @@
 import { StaticImageData } from "next/image";
-import { fitDetectFav, letterboxdLogo, wingsLogo, portfolioFav, otrioLogo } from "./images";
+import { fitDetectFav, letterboxdLogo, wingsLogo, portfolioFav, otrioLogo, umnEmblem } from "./images";
 
 interface Project {
     description: string;
@@ -44,6 +44,21 @@ export const projects: Project[] = [
         `
     }, 
     {
+        projTitle: "Drone Delivery Simulation System",
+        dates: "February 2025 - May 2025",
+        id: "drone-delivery-sim-proj",
+        href: "https://hub.docker.com/r/jjoej15/team_001_14_final_project",
+        image: umnEmblem,
+        altText: "",
+        description: `
+            Application that enables users to interact with drones in a lifelike 3D model of the UMN campus. Users can schedule deliveries, 
+            change the view of the front end, add additional humans or drones to the simulation, change the simulation speed, and show possible 
+            routes for deliveries. Learned about and implemented various design and behavioral patterns to write code and implement a complex system, 
+            adhering to SOLID principles. Learned various development processes. In the final month of working on the project, my group and I 
+            implemented multiple extensions to the project utilizing the agile Scrum project management framework using Jira.
+        `
+    },
+    {
         projTitle: "Letterboxd Recommendation System",
         dates: "June 2024 - July 2024",
         id: "letterboxd-recs-proj",
@@ -66,11 +81,12 @@ export const projects: Project[] = [
         image: otrioLogo,
         altText: "",
         description: `
-            Group research project in which several AI agents were created and tested to play the game Otrio, a variant of 3D tic-tac-toe, specifically
-            the three player version of the game. Methods utilized by the agents for playing Otrio include the Minimax and Max^n— a variant of the Minimax 
-            algorithm generalized for more than two players— algorithms, Monte Carlo Tree Search, and a Deep Q-Network (DQN), which is a reinforcement learning
-            approach that utilizes deep neural networks to learn optimal policies. My primary contributions to the project were the implementation of the DQN 
-            agent and writing the sections related to Q-learning, DQN, and Monte Carlo Tree Search in the final paper.
+            Group research project in which several AI agents were created and tested to play the game Otrio, a variant of 3D tic-tac-toe, 
+            specifically the three player version of the game. Methods utilized by the agents for playing Otrio include the Minimax and Max^n— 
+            a variant of the Minimax algorithm generalized for more than two players— algorithms, Monte Carlo Tree Search, and a Deep Q-Network 
+            (DQN), which is a reinforcement learning approach that utilizes deep neural networks to learn optimal policies. My primary contributions 
+            to the project were the implementation  of the DQN agent and writing the sections related to Q-learning, DQN, and Monte Carlo Tree 
+            Search in the final paper.
         `
     },
     {
