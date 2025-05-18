@@ -66,7 +66,11 @@ export const projects: Project[] = [
         image: otrioLogo,
         altText: "",
         description: `
-
+            Group research project in which several AI agents were created and tested to play the game Otrio, a variant of 3D tic-tac-toe, specifically
+            the three player version of the game. Methods utilized by the agents for playing Otrio include the Minimax and Max^n— a variant of the Minimax 
+            algorithm generalized for more than two players— algorithms, Monte Carlo Tree Search, and a Deep Q-Network (DQN), which is a reinforcement learning
+            approach that utilizes deep neural networks to learn optimal policies. My primary contributions to the project were the implementation of the DQN 
+            agent and writing the sections related to Q-learning, DQN, and Monte Carlo Tree Search in the final paper.
         `
     },
     {
