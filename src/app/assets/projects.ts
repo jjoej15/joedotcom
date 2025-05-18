@@ -1,5 +1,5 @@
 import { StaticImageData } from "next/image";
-import { fitDetectFav, letterboxdLogo, wingsLogo, porfolioFav } from "./images";
+import { fitDetectFav, letterboxdLogo, wingsLogo, portfolioFav, otrioLogo } from "./images";
 
 interface Project {
     description: string;
@@ -77,7 +77,7 @@ export const projects: Project[] = [
         rank: 4,
         id: "portfolio-proj",
         href: "https://github.com/jjoej15/joedotcom",
-        image: porfolioFav,
+        image: portfolioFav,
         altText: "",
         description: `
             A continuous project, I built this site to show off my work, school, and project experiences and also make it easier for
@@ -85,6 +85,17 @@ export const projects: Project[] = [
             As of right now it only has a front-end, which is written in TypeScript and built using Next.js, MDX, and SASS for styling. For
             ease-of-development I decided to use a component library, and I went with Once UI because of it's emphasis on easy styling 
             and accessibility.
+        `
+    }, {
+        projTitle: "Intelligent Agents for Three Player Otrio",
+        dates: "March 2025 - May 2025",
+        rank: 4,
+        id: "otrio-proj",
+        href: "",
+        image: otrioLogo,
+        altText: "",
+        description: `
+
         `
     }
 ]

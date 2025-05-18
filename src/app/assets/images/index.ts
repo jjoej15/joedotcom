@@ -7,7 +7,8 @@ import surlyLogo from "./experiences/surly-brewing-logo.png";
 import fitDetectFav from "./projects/fitdetect-fav.svg";
 import letterboxdLogo from "./projects/letterboxd-logo.svg";
 import wingsLogo from "./projects/wings-logo.png";
-import porfolioFav from "./projects/portfolioFav.png";
+import portfolioFav from "./projects/portfolioFav.png";
+import otrioLogo from "./projects/OtrioIE-favicon.png"
 
 // WINGS
 import boolLights from "./projects/wings/bool-lights.png";
@@ -25,10 +26,11 @@ export {
     fitDetectFav,
     letterboxdLogo,
     wingsLogo,
-    porfolioFav,
+    portfolioFav,
     headshot,
     boolLights,
     boolLightsSettings,
     beforeCrc,
-    afterCrc
+    afterCrc,
+    otrioLogo
 };
