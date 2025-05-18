@@ -13,18 +13,6 @@ interface Experience {
 
 export const experiences: Experience[] = [
     {
-        image: umnEmblem,
-        imageAltText: "Emblem for the University of Minnesota - Twin Cities",
-        company: "University of Minnesota - Twin Cities",
-        expTitle: "Teaching Assistant",
-        description: `
-            I got to assist in teaching an Intro to Programming Concepts course with over 800 students. I helped students
-            learn fundamental computer science concepts with Python. I held regular office hours, facilitated lab sessions
-            with other TAs, and collaborated with course instructors to grade and revise homework assignments.
-        `, 
-        dates: "January 2024 - May 2024",
-        id: "ta-exp"
-    }, {
         image: spsCommerceLogo,
         imageAltText: "SPS Commerce logo",
         company: "SPS Commerce",
@@ -38,7 +26,33 @@ export const experiences: Experience[] = [
         `, 
         dates: "September 2024 - present",
         id: "sps-exp"
-    }, {
+    },
+    {
+        image: umnEmblem,
+        imageAltText: "Emblem for the University of Minnesota - Twin Cities",
+        company: "University of Minnesota - Twin Cities",
+        expTitle: "Teaching Assistant",
+        description: `
+            I got to assist in teaching an Intro to Programming Concepts course with over 800 students. I helped students
+            learn fundamental computer science concepts with Python. I held regular office hours, facilitated lab sessions
+            with other TAs, and collaborated with course instructors to grade and revise homework assignments.
+        `, 
+        dates: "January 2024 - May 2024",
+        id: "ta-exp"
+    }, 
+    {
+        image: surlyLogo, 
+        imageAltText: "Surly Brewing logo",
+        company: "Surly Brewing",
+        expTitle: "Front of House Staff",
+        description: `
+            Worked as a barback, server, beertender, food runner, busser, and cashier. Learned a ton about craft beer and working
+            in the food service industry. Worked within a fast-paced, highly collaborative, and fun work environment.
+        `,
+        dates: "September 2023 - September 2024",
+        id: "surly-exp"
+    },
+    {
         image: umnEmblem,
         imageAltText: "Emblem for the University of Minnesota - Twin Cities",
         company: "University of Minnesota - Twin Cities",
@@ -52,16 +66,5 @@ export const experiences: Experience[] = [
         `,
         dates: "September 2022 - May 2026",
         id: "student-exp"
-    }, {
-        image: surlyLogo, 
-        imageAltText: "Surly Brewing logo",
-        company: "Surly Brewing",
-        expTitle: "Front of House Staff",
-        description: `
-            Worked as a barback, server, beertender, food runner, busser, and cashier. Learned a ton about craft beer and working
-            in the food service industry. Worked within a fast-paced, highly collaborative, and fun work environment.
-        `,
-        dates: "September 2023 - September 2024",
-        id: "surly-exp"
-    }   
+    },  
 ]
