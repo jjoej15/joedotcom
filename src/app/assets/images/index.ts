@@ -15,6 +15,7 @@ import boolLights from "./projects/wings/bool-lights.png";
 import boolLightsSettings from "./projects/wings/bool-lights-settings.png";
 import beforeCrc from "./projects/wings/before-crc.png";
 import afterCrc from "./projects/wings/after-crc.png";
+import graphZoomDemo from "./projects/wings/zoom-graph-demo.png";
 
 // Misc.
 import headshot from "./headshot.jpg";
@@ -32,5 +33,6 @@ export {
     boolLightsSettings,
     beforeCrc,
     afterCrc,
-    otrioLogo
+    otrioLogo,
+    graphZoomDemo
 };

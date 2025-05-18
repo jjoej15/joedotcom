@@ -1,11 +1,19 @@
-import { boolLights, boolLightsSettings, beforeCrc, afterCrc } from "../images";
+import { boolLights, boolLightsSettings, beforeCrc, afterCrc, graphZoomDemo } from "../images";
+import { siteColor } from '@/once-ui/resources/config';
 import styles from "../../styles/Wings.module.sass";
 
-WINGS is the UMN Rocket Team's proprietary software that's used for data analysis during and after rocket launches. I joined
+WINGS is the UMN Rocket Team's proprietary software that's used to display data during and after rocket launches. I joined
 the team at the start of my junior year (September 2024), and have since helped contribute to building the software's robust
-memory and type safe back-end using Rust and the front-end using TypeScript. The software supports both live telemetry reception
-through a USB port and also playback of data from previous launches through different file formats. The front-end can display 
-processed data for visualization with its graph, indicator light, and readout displays.
+memory and type safe back-end using Rust and the front-end using TypeScript. I will be taking on the role of leading the software
+subteam starting next Fall. \
+\
+The software supports both live telemetry reception through a USB port and also playback of data from 
+previous launches through different file formats. The front-end can display processed data for visualization with its graph, indicator 
+light, 3D model, and readout displays. The project was selected by the rocket team to be the focus of the team's podium presentation
+at the 
+<SmartLink href="https://www.soundingrocket.org/" color={siteColor} style={{ padding: "0", margin: "0", display: "inline", gap: "0" }}>2025 IREC competition</SmartLink>
+because of the software's unique capability to be able to work with a variety of flight computers from different brands, which typically 
+requires the usage of multiple ground stations, making WINGs one of the few systems out there that provide a universal ground station. 
 
 <Heading
     wrap="balance" as="h2"
@@ -75,6 +83,29 @@ TeleMetrum and data saved to a file.
         alt="Line graph displaying data in WINGS software, not including outlier data points that makes graph unreadable" />
 </Flex>
 
+<h3
+    style={{ marginTop: "17px", marginBottom: "15px" }}>
+    Zoom-Capable Graphs
+</h3>
+
+I integrated the ability to zoom in or out on graphs, a long-awaited yet useful feature for data visualization. Users have the ability 
+to zoom in on data, and drag the x-axis horizontally in order to get a closer look at older or newer data. Additionally, I created a new 
+display element which has a fixed x-axis and works by displaying new data on the right while pushing out old data to the left, 
+creating a sliding window or oscilloscope-style effect. This new display is useful for realtime display of time-series data.
+
+<Flex
+    direction='column' alignItems="center"
+    position="relative" padding="32">
+    <b className={styles.b}>Graphs with and without zoom-in</b>
+    <Image 
+        src={graphZoomDemo} height={300} layout="responsive"
+        style={{ marginTop: "8px", marginBottom: "20px" }}
+        alt="Graph displays in WINGs software. Left graph has no zoom in and data looks cluttered. 
+            Right graph is zoomed-in and data looks clean." />
+        
+</Flex>
+
+
 <h3 
     style={{ marginTop: "17px", marginBottom: "15px" }}>
     Other Contributions
@@ -83,11 +114,7 @@ TeleMetrum and data saved to a file.
 Other contributions I've made to the project include improving the functionality and styling of all of the settings modals for the
 displays, adding help text/documentation throughout to improve software ease-of-use, conducting end-to-end testing to ensure implemented
 features work, and other various small front-end improvements. One of the most rewarding aspects of working on this project has been
-being able to develop software within a collaborate, team environment. \
-\
-Currently, I'm creating new graphs that would be used for realtime 
-display of time-series data. The new graphs will work by displaying new data on the right while pushing out old data to the left, 
-creating a sliding window effect.
+being able to develop software within a collaborate, team environment.
 
 
 <Heading
