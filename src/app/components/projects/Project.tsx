@@ -39,14 +39,11 @@ const Project = ({
                     gap="20" alignItems="center" paddingBottom="12"
                     style={{ borderBottom: '1px solid var(--neutral-border-medium)' }}>
                     <Flex alignItems="center"
-                        style={{ height: "70px", width: "70px" }}>{ image.width > image.height ?
+                        style={{ height: "70px", width: "70px" }}>
                         <Image
                             src={image} alt={altText}
                             width={70}/>
-                        : <Image
-                            src={image} alt={altText}
-                            height={70}/>
-                    }</Flex>
+                    </Flex>
                     <Flex
                         position="relative"
                         direction="column">

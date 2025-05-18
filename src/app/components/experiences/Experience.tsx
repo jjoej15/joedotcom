@@ -39,14 +39,11 @@ const Experience = ({
                     gap="20" alignItems="center" paddingBottom="12"
                     style={{ borderBottom: '1px solid var(--neutral-border-medium)' }}>
                     <Flex alignItems="center"
-                        style={{ height: "85px", width: "85px" }}>{ image.width > image.height ?
+                        style={{ height: "85px", width: "85px" }}>
                         <Image
                             src={image} alt={altText}
                             width={85}/>
-                        : <Image
-                            src={image} alt={altText}
-                            height={85}/>
-                    }</Flex>
+                    </Flex>
                     <Flex
                         position="relative"
                         direction="column">
