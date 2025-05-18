@@ -1,5 +1,5 @@
 import { StaticImageData } from "next/image";
-import { umnEmblem, surlyLogo, spsCommerceLogo } from "./images";
+import { umnEmblem, surlyLogo, spsCommerceLogo, rocketTeamLogo } from "./images";
 
 interface Experience {
     image: StaticImageData;
@@ -26,6 +26,20 @@ export const experiences: Experience[] = [
         `, 
         dates: "September 2024 - present",
         id: "sps-exp"
+    },
+    {
+        image: rocketTeamLogo,
+        imageAltText: "UMN Rocket Team logo",
+        company: "UMN Rocket Team",
+        expTitle: "Member | Software Lead",
+        description: `
+            I'm currently developing software for the UMN Rocket Team, where we're building the WINGS ground station, which is 
+            used for data visualization during and after rocket launches through live telemetry reception and through
+            various file formats. Gaining experience in full stack development within a collaborative and fun environment. I was
+            recently chosen to lead the software team, and will be assuming the role next Fall.
+        `,
+        dates: "September 2024 - present",
+        id: "rocket-team-exp"
     },
     {
         image: umnEmblem,

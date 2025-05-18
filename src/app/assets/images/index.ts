@@ -2,6 +2,7 @@
 import umnEmblem from "./experiences/umn-emblem.png";
 import spsCommerceLogo from "./experiences/sps-commerce-logo.png";
 import surlyLogo from "./experiences/surly-brewing-logo.png";
+import rocketTeamLogo from "./experiences/rocket-team-logo.png";
 
 // Projects images
 import fitDetectFav from "./projects/fitdetect-fav.svg";
@@ -34,5 +35,6 @@ export {
     beforeCrc,
     afterCrc,
     otrioLogo,
-    graphZoomDemo
+    graphZoomDemo,
+    rocketTeamLogo
 };
