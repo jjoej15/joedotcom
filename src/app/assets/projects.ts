@@ -13,20 +13,6 @@ interface Project {
 
 export const projects: Project[] = [
     {
-        projTitle: "Letterboxd Recommendation System",
-        dates: "June 2024 - July 2024",
-        id: "letterboxd-recs-proj",
-        href: "https://github.com/jjoej15/letterboxd-recs",
-        image: letterboxdLogo,
-        altText: "",
-        description: `
-            Data scraping project and web app that gives film recommendations for any Letterboxd user or a recommendation for two using Blend mode
-            by implementing a collaborative filtering based machine learning model utilizing SVD factorization for dimensionality reduction. 
-            Users can include filters such as film popularity, film genre, and films  in user's watchlist. Used asynchronous web
-            scraping techniques to collect ratings data from over 5,000 Letterboxd users, resulting in a dataset of approximately 13,000,000
-            ratings and 950,000 films.
-        `
-    }, {
         projTitle: "WINGS Ground Station",
         dates: "September 2024 - present",
         id: "wings-proj",
@@ -41,7 +27,8 @@ export const projects: Project[] = [
             Helping to conduct end-to-end testing to ensure that the rest of the team can confidently visualize and interpret data in order 
             to fine-tune their projects.
         `
-    }, {
+    },
+    {
         projTitle: "FitDetect - Outfit Detection + Recommendation System",
         dates: "July 2024 - August 2024",
         id: "fitdetect-proj",
@@ -55,18 +42,34 @@ export const projects: Project[] = [
             a k-means clustering algorithm for dominant color identification of each piece of the outfit in order to enhance recommendations.
             Built a React front-end and a Python back-end with FastAPI to support the web application.  
         `
-    }, {
-        projTitle: "Letterboxd Higher or Lower Game",
-        dates: "May 2024 - June 2024",
-        id: "letterboxd-hol-proj",
-        href: "https://github.com/jjoej15/letterboxd-HoL",
+    }, 
+    {
+        projTitle: "Letterboxd Recommendation System",
+        dates: "June 2024 - July 2024",
+        id: "letterboxd-recs-proj",
+        href: "https://github.com/jjoej15/letterboxd-recs",
         image: letterboxdLogo,
         altText: "",
         description: `
-            Inspired by the popular "Higher or Lower" game format, I made a simple web application that allows users to compare Letterboxd movie 
-            ratings and guess which movie has a higher rating. This project uses data scraped from Letterboxd.
+            Data scraping project and web app that gives film recommendations for any Letterboxd user or a recommendation for two using Blend mode
+            by implementing a collaborative filtering based machine learning model utilizing SVD factorization for dimensionality reduction. 
+            Users can include filters such as film popularity, film genre, and films  in user's watchlist. Used asynchronous web
+            scraping techniques to collect ratings data from over 5,000 Letterboxd users, resulting in a dataset of approximately 13,000,000
+            ratings and 950,000 films.
         `
-    }, {
+    },  
+    {
+        projTitle: "Intelligent Agents for Three Player Otrio",
+        dates: "March 2025 - May 2025",
+        id: "otrio-proj",
+        href: "https://drive.google.com/file/d/1hM1w5lPTsmOcrlQ9qAALCs0ScbQeWxMS/view?usp=drive_link",
+        image: otrioLogo,
+        altText: "",
+        description: `
+
+        `
+    },
+    {
         projTitle: "Portfolio Website",
         dates: "December 2024 - present",
         id: "portfolio-proj",
@@ -80,15 +83,17 @@ export const projects: Project[] = [
             ease-of-development I decided to use a component library, and I went with Once UI because of it's emphasis on easy styling 
             and accessibility.
         `
-    }, {
-        projTitle: "Intelligent Agents for Three Player Otrio",
-        dates: "March 2025 - May 2025",
-        id: "otrio-proj",
-        href: "",
-        image: otrioLogo,
+    },
+    {
+        projTitle: "Letterboxd Higher or Lower Game",
+        dates: "May 2024 - June 2024",
+        id: "letterboxd-hol-proj",
+        href: "https://github.com/jjoej15/letterboxd-HoL",
+        image: letterboxdLogo,
         altText: "",
         description: `
-
+            Inspired by the popular "Higher or Lower" game format, I made a simple web application that allows users to compare Letterboxd movie 
+            ratings and guess which movie has a higher rating. This project uses data scraped from Letterboxd.
         `
-    }
+    }, 
 ]
