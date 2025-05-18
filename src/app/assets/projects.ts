@@ -88,16 +88,4 @@ export const projects: Project[] = [
             and accessibility.
         `
     },
-    {
-        projTitle: "Letterboxd Higher or Lower Game",
-        dates: "May 2024 - June 2024",
-        id: "letterboxd-hol-proj",
-        href: "https://github.com/jjoej15/letterboxd-HoL",
-        image: letterboxdLogo,
-        altText: "",
-        description: `
-            Inspired by the popular "Higher or Lower" game format, I made a simple web application that allows users to compare Letterboxd movie 
-            ratings and guess which movie has a higher rating. This project uses data scraped from Letterboxd.
-        `
-    }, 
 ]
