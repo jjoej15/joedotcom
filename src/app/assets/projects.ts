@@ -18,7 +18,7 @@ export const projects: Project[] = [
         id: "wings-proj",
         href: "/projects/wings",
         image: wingsLogo,
-        altText: "",
+        altText: "Logo for the UMN Rocket Team.",
         description: `
             Helping develop the UMN rocket team's proprietary WINGS software used for data analysis during and after rocket launches.
             Being a full stack engineering project, I'm contributing by helping build a robust memory-safe Rust back-end that supports 
@@ -34,7 +34,7 @@ export const projects: Project[] = [
         id: "fitdetect-proj",
         href: "https://github.com/jjoej15/outfit-detect-recs",
         image: fitDetectFav,
-        altText: "",
+        altText: "A logo for FitDetect. Cartoon image of a T-shirt.",
         description: `
             Pre-processed over 30,000 images to help train a YOLOv8 object detection model to identify pieces of a user's outfit, 
             utilizing advancements in deep learning and computer vision. Used OpenCV for real-time outfit detection via webcam or 
@@ -49,7 +49,7 @@ export const projects: Project[] = [
         id: "drone-delivery-sim-proj",
         href: "https://hub.docker.com/r/jjoej15/team_001_14_final_project",
         image: umnEmblem,
-        altText: "",
+        altText: "Emblem for the University of Minnesota - Twin Cities",
         description: `
             Application that enables users to interact with drones in a lifelike 3D model of the UMN campus. Users can schedule deliveries, 
             change the view of the front end, add additional humans or drones to the simulation, change the simulation speed, and show possible 
@@ -64,7 +64,7 @@ export const projects: Project[] = [
         id: "letterboxd-recs-proj",
         href: "https://github.com/jjoej15/letterboxd-recs",
         image: letterboxdLogo,
-        altText: "",
+        altText: "Letterboxd logo.",
         description: `
             Data scraping project and web app that gives film recommendations for any Letterboxd user or a recommendation for two using Blend mode
             by implementing a collaborative filtering based machine learning model utilizing SVD factorization for dimensionality reduction. 
@@ -79,7 +79,7 @@ export const projects: Project[] = [
         id: "otrio-proj",
         href: "https://drive.google.com/file/d/1hM1w5lPTsmOcrlQ9qAALCs0ScbQeWxMS/view?usp=drive_link",
         image: otrioLogo,
-        altText: "",
+        altText: "Image of three rings, representing the board game Otrio.",
         description: `
             Group research project in which several AI agents were created and tested to play the game Otrio, a variant of 3D tic-tac-toe, 
             specifically the three player version of the game. Methods utilized by the agents for playing Otrio include the Minimax and Max^n— 
@@ -95,7 +95,7 @@ export const projects: Project[] = [
         id: "portfolio-proj",
         href: "https://github.com/jjoej15/joedotcom",
         image: portfolioFav,
-        altText: "",
+        altText: "Favicon for Joe's portfolio website.",
         description: `
             A continuous project, I built this site to show off my work, school, and project experiences and also make it easier for
             potential employers or collaborators to get to know me. I also viewed it as an opportunity to enhance my web development skills.
