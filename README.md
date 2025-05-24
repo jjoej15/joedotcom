@@ -33,7 +33,7 @@ To run the front-end locally, follow these steps:
 
 ## Development
 
-Feel free to use the source code for this site as a template. Having a working knowledge of React and Next.js' routing system is necessary. For help with Once UI components, refer to their [docs](https://once-ui.com/docs). Here's how you can customize the content and create your own portfolio website:
+Feel free to use the source code for this site as a template. Having a working knowledge of React and Next.js' routing system is necessary. For help with Once UI components, refer to their [docs](https://docs.once-ui.com/once-ui/quick-start). Here's how you can customize the content and create your own portfolio website:
 
 ### Site Layout and Styling
 - Navigate to ```src/app/layout.tsx``` to edit site layout
