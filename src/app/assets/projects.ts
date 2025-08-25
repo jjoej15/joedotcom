@@ -29,7 +29,7 @@ export const projects: Project[] = [
         `
     },
     {
-        projTitle: "FitDetect - Outfit Detection + Recommendation System",
+        projTitle: "FitDetect - Outfit Detection and Recommendation System",
         dates: "July 2024 - August 2024",
         id: "fitdetect-proj",
         href: "https://github.com/jjoej15/outfit-detect-recs",
