@@ -31,12 +31,14 @@ export const experiences: Experience[] = [
         image: rocketTeamLogo,
         imageAltText: "UMN Rocket Team logo",
         company: "UMN Rocket Team",
-        expTitle: "Member | Software Lead",
+        expTitle: "Software Lead",
         description: `
-            I'm currently developing software for the UMN Rocket Team, where we're building the WINGS ground station, which is 
-            used for data visualization during and after rocket launches through live telemetry reception and through
-            various file formats. Gaining experience in full stack development within a collaborative and fun environment. I was
-            recently chosen to lead the software team, and will be assuming the role next Fall.
+            I'm currently developing software for the UMN rocket team, where we're building the WINGS ground station, among other
+            software projects. After joining the team my junior year, I was chosen to lead the group of developers that comprise the 
+            software sub-team of the club my senior year. Under my leadership thus far, we have open sourced WINGS in order to open
+            the door for collaboration among the broader rocketry community, and I am the primary maintainer of the open-source
+            repository. Throughout the upcoming year, I plan to upstart the development of new projects, and will get the opportunity
+            to design these new systems from scratch.
         `,
         dates: "September 2024 - present",
         id: "rocket-team-exp"
