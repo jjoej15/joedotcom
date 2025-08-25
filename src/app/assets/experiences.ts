@@ -74,11 +74,11 @@ export const experiences: Experience[] = [
         company: "University of Minnesota - Twin Cities",
         expTitle: "Student",
         description: `
-            Currently working towards a B.S. in Computer Science with a minor in Statistics. A member of the UMN Rocket Team, 
+            Currently working towards a B.S. in Computer Science with a minor in Statistics. Being a member and software lead of the UMN Rocket Team, 
             I help develop the team's ground station software for fun. Some relevant courses I've taken include Algorithms &
             Data Structures, Intro to Operating Systems, Machine Learning Fundamentals, Machine Organization & Architecture, 
             Applied Linear Algebra, and Calculus 2. I've been listed on the College of Science & Engineering's Dean's List 
-            for 5 consecutive semesters.
+            for 5 consecutive semesters, and have obtained a cumulative GPA of 3.75/4.
         `,
         dates: "September 2022 - May 2026",
         id: "student-exp"
