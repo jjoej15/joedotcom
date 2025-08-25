@@ -34,14 +34,14 @@ const Contact = () => {
                     style={{ lineHeight: "1.5" }}>
                     <span>The best ways to contact me are to email me at </span>
                     <span><SmartLink
-                        href="mailto:and10287@umn.edu" color={siteColor}
+                        href="mailto:joejanderson03@gmail.com" color={siteColor}
                         style={{
                             padding: "0",
                             margin: "0",
                             display: "inline",
                             gap: "0"
                         }}>
-                        and10287@umn.edu
+                        joejanderson03@gmail.com
                     </SmartLink></span>
                     <span> or shoot a message to my </span>
                     <span><SmartLink
