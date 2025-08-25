@@ -72,7 +72,7 @@ export default function Home() {
 							}}>
 							University of Minnesota
 						</SmartLink></span>
-						<span> in Minneapolis, MN. I'm a junior who's working towards
+						<span> in Minneapolis, MN. I'm a senior who's working towards
 							a Bachelor of Science in Computer Science with a minor in Statistics.</span>
 					</Text>
 					<Text
@@ -87,27 +87,27 @@ export default function Home() {
 								display: "inline", 
 								gap: "0"
 							}}>
-							Maverick Software Consulting
+							SPS Commerce
 						</SmartLink></span>
-						<span> in partnership with </span>
+						<span> in partnership with Maverick Software Consulting, and the software lead
+							on the </span>
 						<span><SmartLink 
-							href="/experiences#sps-exp" color={siteColor}
+							href="/experiences#rocket-team-exp" color={siteColor}
 							style={{
 								padding: "0",
 								margin: "0",
 								display: "inline", 
 								gap: "0"
 							}}>
-							SPS Commerce
+							UMN Rocket Team
 						</SmartLink></span>
-						<span>, where I'm maintaining and developing new data transformation services
-							to be integrated into our customers' ERP systems.</span>
+						<span>.</span>
 					</Text>
 					<Text
 						marginBottom='20'
 						style={{ lineHeight: "1.5" }}>
-						<span>I'm most interested in Machine Learning and Artificial 
-							Intelligence, and am seeking out research opportunities and potentially a Master's degree.
+						<span>I'm most interested in full-stack development and machine learning, and am seeking
+							full-time opportunities in these fields.
 							In my freetime I have worked on a variety of </span>
 						<span><SmartLink 
 							href="/projects" color={siteColor}
