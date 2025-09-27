@@ -20,12 +20,11 @@ export const projects: Project[] = [
         image: wingsLogo,
         altText: "Logo for the UMN Rocket Team.",
         description: `
-            Helping develop the UMN rocket team's proprietary WINGS software used for data visualization during and after rocket launches.
-            Being a full stack engineering project, I'm contributing by helping build a robust memory-safe Rust back-end that supports 
-            live telemetry reception through a USB port and handles data processing, and a front-end written in TypeScript for data visualization
-            that features graph displays, indicator light displays, and more. Frameworks utilized include Tauri, SolidJS, and Tailwind CSS.
-            Helping to conduct end-to-end testing to ensure that the rest of the team can confidently visualize and interpret data in order 
-            to fine-tune their projects.
+            Currently leading the development of the UMN Rocket Team's open-sourced WINGS ground station software, used for reception of
+            live telemetry data from rockets' on-board avionics systems and the real-time or post-flight processing and visualization of
+            the data. Being a full stack engineering project, I'm contributing by helping build a robust memory-safe Rust back-end that supports 
+            live telemetry reception through a USB port and data processing, and a front-end written in TypeScript for data visualization
+            that features graph displays, indicator light displays, and more. 
         `
     },
     {
