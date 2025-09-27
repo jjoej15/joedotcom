@@ -19,10 +19,9 @@ export const experiences: Experience[] = [
         expTitle: "Software Engineer Intern",
         description: `
             Right now I'm developing software at SPS Commerce as a contractor through Maverick Software Consulting. I've 
-            gotten the opportunity to help maintain existing and write new data transformation services to be utilized on
-            a custom in-house platform, and eventually integrated into our customers' ERP systems. Responsibilities include
-            developing new EDI maps and re-factoring or fixing defects for existing ones, using Java and occasionally scripts
-            written in Python.
+            gotten the opportunity to develop and optimize Electronic Data Interchange (EDI) product maps using 
+            Java and Python for integration with customer Enterprise Resource Planning (ERP) systems, ensuring 
+            accurate and efficient data exchange that reduces manual intervention and errors for end-users.
         `, 
         dates: "September 2024 - present",
         id: "sps-exp"
@@ -33,12 +32,12 @@ export const experiences: Experience[] = [
         company: "UMN Rocket Team",
         expTitle: "Software Lead",
         description: `
-            I'm currently developing software for the UMN rocket team, where we're building the WINGS ground station, among other
-            software projects. After joining the team my junior year, I was chosen to lead the group of developers that comprise the 
-            software sub-team of the club my senior year. Under my leadership thus far, we have open sourced WINGS in order to open
-            the door for collaboration among the broader rocketry community, and I am the primary maintainer of the open-source
-            repository. Throughout the upcoming year, I plan to upstart the development of new projects, and will get the opportunity
-            to design these new systems from scratch.
+            I'm currently leading the development of ground station software for the Rocket Team student org at UMN, 
+            enabling real-time and post-flight visualization of telemetry data sent from rockets exceeding altitudes 
+            of 30,000+ feet. After joining the team as a developer my junior year (Fall '24), I was chosen to lead the software
+            sub-team of the club my senior year (Fall '25). Responsibilities include leading development of software projects
+            for the team, recruiting, onboarding, and managing a team of developers, and maintaining WINGS, the team's
+            open-sourced ground station software.
         `,
         dates: "September 2024 - present",
         id: "rocket-team-exp"
