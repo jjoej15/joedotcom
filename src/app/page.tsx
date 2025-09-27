@@ -101,14 +101,15 @@ export default function Home() {
 							}}>
 							UMN Rocket Team
 						</SmartLink></span>
-						<span>.</span>
+						<span>. I'm most interested in full-stack software development, and am 
+							currently seeking full-time opportunities.</span>
 					</Text>
 					<Text
 						marginBottom='20'
 						style={{ lineHeight: "1.5" }}>
-						<span>I'm most interested in full-stack development and machine learning, and am seeking
-							full-time opportunities in these fields.
-							In my freetime I have worked on a variety of </span>
+						<span>Most experienced in building web applications 
+							and software to communicate with avionics systems.
+							In my freetime I like to work on a variety of </span>
 						<span><SmartLink 
 							href="/projects" color={siteColor}
 							style={{
@@ -119,7 +120,7 @@ export default function Home() {
 							}}>
 							projects
 						</SmartLink></span>
-						<span>, and also enjoy producing music, reading fiction, skiing, and guitars.</span>
+						<span>, and also enjoy producing music, reading, skiing, and playing guitar.</span>
 					</Text>
 				</Flex>
 			</Flex>
