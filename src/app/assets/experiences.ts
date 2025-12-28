@@ -13,6 +13,22 @@ interface Experience {
 
 export const experiences: Experience[] = [
     {
+        image: umnEmblem,
+        imageAltText: "Emblem for the University of Minnesota - Twin Cities",
+        company: "University of Minnesota - Twin Cities",
+        expTitle: "Student",
+        description: `
+            Currently working towards a B.S. in Computer Science with a minor in Statistics. Being a member and software lead of the UMN Rocket Team, 
+            I help develop the team's ground station software for fun. Some relevant courses I've taken include Algorithms &
+            Data Structures, Program Design & Development, Developing Secure Software Systems, Software Development Processes, Practice of DB Systems,
+            Intro to Operating Systems, Intro to Distributed Systems, Machine Organization & Architecture, Machine Learning Fundamentals, Deep Learning, 
+            Data Analysis, Theory of Statistics 1 & 2, and Applied Linear Algebra. I've been listed on the College of Science & Engineering's Dean's List 
+            for 6 consecutive semesters, and have obtained a cumulative GPA of 3.78/4.
+        `,
+        dates: "September 2022 - May 2026",
+        id: "student-exp"
+    },  
+    {
         image: spsCommerceLogo,
         imageAltText: "SPS Commerce logo",
         company: "SPS Commerce",
@@ -67,19 +83,4 @@ export const experiences: Experience[] = [
         dates: "September 2023 - September 2024",
         id: "surly-exp"
     },
-    {
-        image: umnEmblem,
-        imageAltText: "Emblem for the University of Minnesota - Twin Cities",
-        company: "University of Minnesota - Twin Cities",
-        expTitle: "Student",
-        description: `
-            Currently working towards a B.S. in Computer Science with a minor in Statistics. Being a member and software lead of the UMN Rocket Team, 
-            I help develop the team's ground station software for fun. Some relevant courses I've taken include Algorithms &
-            Data Structures, Intro to Operating Systems, Machine Learning Fundamentals, Machine Organization & Architecture, 
-            Applied Linear Algebra, and Calculus 2. I've been listed on the College of Science & Engineering's Dean's List 
-            for 5 consecutive semesters, and have obtained a cumulative GPA of 3.75/4.
-        `,
-        dates: "September 2022 - May 2026",
-        id: "student-exp"
-    },  
 ]
