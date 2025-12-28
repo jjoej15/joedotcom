@@ -1,5 +1,5 @@
 import { StaticImageData } from "next/image";
-import { fitDetectFav, letterboxdLogo, wingsLogo, portfolioFav, otrioLogo, umnEmblem } from "./images";
+import { fitDetectFav, letterboxdLogo, wingsLogo, portfolioFav, otrioLogo, umnEmblem, jjaStoreLogo } from "./images";
 
 interface Project {
     description: string;
@@ -25,6 +25,22 @@ export const projects: Project[] = [
             the data. Being a full stack engineering project, I'm contributing by helping build a robust memory-safe Rust back-end that supports 
             live telemetry reception through a USB port and data processing, and a front-end written in TypeScript for data visualization
             that features graph displays, indicator light displays, and more. 
+        `
+    },
+    {
+        projTitle: "Beat License E-Commerce Store Web Application",
+        dates: "November 2025 - present",
+        id: "beat-license-proj",
+        href: "https://github.com/jjoej15/prod-jja-store",
+        image: jjaStoreLogo,
+        altText: "A logo for the Beat License E-Commerce Store Web Application project.",
+        description: `
+            Built a production e-commerce web app for browsing, streaming previews, and purchasing beat licenses (MP3/WAV leases + 
+            exclusives) using Next.js (App Router) and React. Implemented secure payments with PayPal Orders API and designed backend 
+            workflow to persist orders to Postgres and generate PDF contracts automatically after successful payment. Delivered 
+            digital goods securely via AWS S3 presigned URLs and automated email fulfillment through SMTP/Nodemailer. Added efficient 
+            audio preview streaming via a range-based API route to support seeking and smooth playback in a custom player UI. 
+            Applied practical production patterns such as reusable DB/S3 clients.
         `
     },
     {

@@ -10,6 +10,7 @@ import letterboxdLogo from "./projects/letterboxd-logo.svg";
 import wingsLogo from "./projects/wings-logo.png";
 import portfolioFav from "./projects/portfolioFav.png";
 import otrioLogo from "./projects/OtrioIE-favicon.png"
+import jjaStoreLogo from "./projects/jja-store-logo.png";
 
 // WINGS
 import boolLights from "./projects/wings/bool-lights.png";
@@ -36,5 +37,6 @@ export {
     afterCrc,
     otrioLogo,
     graphZoomDemo,
-    rocketTeamLogo
+    rocketTeamLogo,
+    jjaStoreLogo,
 };
