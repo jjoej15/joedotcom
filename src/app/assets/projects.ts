@@ -44,6 +44,21 @@ export const projects: Project[] = [
         `
     },
     {
+        projTitle: "Letterboxd Recommendation System",
+        dates: "June 2024 - July 2024",
+        id: "letterboxd-recs-proj",
+        href: "https://github.com/jjoej15/letterboxd-recs",
+        image: letterboxdLogo,
+        altText: "Letterboxd logo.",
+        description: `
+            Data scraping project and web app that gives film recommendations for any Letterboxd user or a recommendation for two using Blend mode
+            by implementing a collaborative filtering based machine learning model utilizing SVD factorization for dimensionality reduction. 
+            Users can include filters such as film popularity, film genre, and films  in user's watchlist. Used asynchronous web
+            scraping techniques to collect ratings data from over 5,000 Letterboxd users, resulting in a dataset of approximately 13,000,000
+            ratings and 950,000 films.
+        `
+    },  
+    {
         projTitle: "FitDetect - Outfit Detection and Recommendation System",
         dates: "July 2024 - August 2024",
         id: "fitdetect-proj",
@@ -73,21 +88,6 @@ export const projects: Project[] = [
             implemented multiple extensions to the project utilizing the agile Scrum project management framework using Jira.
         `
     },
-    {
-        projTitle: "Letterboxd Recommendation System",
-        dates: "June 2024 - July 2024",
-        id: "letterboxd-recs-proj",
-        href: "https://github.com/jjoej15/letterboxd-recs",
-        image: letterboxdLogo,
-        altText: "Letterboxd logo.",
-        description: `
-            Data scraping project and web app that gives film recommendations for any Letterboxd user or a recommendation for two using Blend mode
-            by implementing a collaborative filtering based machine learning model utilizing SVD factorization for dimensionality reduction. 
-            Users can include filters such as film popularity, film genre, and films  in user's watchlist. Used asynchronous web
-            scraping techniques to collect ratings data from over 5,000 Letterboxd users, resulting in a dataset of approximately 13,000,000
-            ratings and 950,000 films.
-        `
-    },  
     {
         projTitle: "Intelligent Agents for Three Player Otrio",
         dates: "March 2025 - May 2025",
