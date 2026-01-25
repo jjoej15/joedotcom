@@ -1,4 +1,4 @@
-import { boolLights, boolLightsSettings, beforeCrc, afterCrc, graphZoomDemo } from "../images";
+import { boolLights, boolLightsSettings, beforeCrc, afterCrc, graphZoomDemo, wingsArcDiagram } from "../images";
 import { siteColor } from '@/once-ui/resources/config';
 import styles from "../../styles/Wings.module.sass";
 
@@ -26,9 +26,36 @@ among the broader rocketry community. Since August 2025, I have been one of the 
     Table of Contents
 </Heading>
 
-- [Personal Contributions](#personal-contributions)
 - [Technologies Used](#technologies-used)
+- [Personal Contributions](#personal-contributions)
+    - [Indicator Lights](#indicator-lights)
+    - [Altus Metrum Checksum](#altus-metrum-checksum)
+    - [Zoom-Capable Graphs](#zoom-capable-graphs)
+    - [InfluxDB & Grafana Integration](#influxdb-grafana-integration)
+    - [Other Contributions](#other-contributions)
 
+<Heading
+    id="technologies-used"
+    wrap="balance" as="h2"
+    marginTop="24" marginBottom="4">
+    Technologies Used
+</Heading>
+
+<h3
+    style={{ marginTop: "20px", marginBottom: "15px" }}>
+    Front End
+</h3>
+- **TypeScript**
+- **SolidJS** as a reactive JS library
+- **Tailwind CSS** for styling
+- **Tauri** software framework
+
+<h3
+    style={{ marginTop: "25px", marginBottom: "15px" }}>
+    Back End
+</h3>
+- **Rust**
+- **Tauri** software framework
 
 <Heading
     id="personal-contributions"
@@ -38,7 +65,8 @@ among the broader rocketry community. Since August 2025, I have been one of the 
 </Heading>
 
 <h3 
-    style={{ marginTop: "17px", marginBottom: "15px" }}>
+    style={{ marginTop: "17px", marginBottom: "15px" }}
+    id="indicator-lights">
     Indicator Lights
 </h3>
 
@@ -63,7 +91,8 @@ or turn red otherwise.
 </Flex>
 
 <h3 
-    style={{ marginTop: "17px", marginBottom: "15px" }}>
+    style={{ marginTop: "17px", marginBottom: "15px" }}
+    id="altus-metrum-checksum">
     Altus Metrum Checksum
 </h3>
 
@@ -89,7 +118,8 @@ TeleMetrum and data saved to a file.
 </Flex>
 
 <h3
-    style={{ marginTop: "17px", marginBottom: "15px" }}>
+    style={{ marginTop: "17px", marginBottom: "15px" }}
+    id="zoom-capable-graphs">
     Zoom-Capable Graphs
 </h3>
 
@@ -110,9 +140,35 @@ creating a sliding window or oscilloscope-style effect. This new display is usef
         
 </Flex>
 
+<h3
+    style={{ marginTop: "17px", marginBottom: "15px" }}
+    id="influxdb-grafana-integration">
+    InfluxDB and Grafana Integration
+</h3>
+
+One of the major limitations of WINGS was the lack of readily available, out-of-the-box data visualization components. To address this, 
+I designed a new telemetry architecture centered around integrating InfluxDB, a time-series database optimized for high-throughput numerical 
+data, and Grafana, a flexible dashboarding platform for real-time visualization. My goal was to extend WINGS in a way that preserved its existing 
+data processing pipeline while enabling live dashboards, advanced querying, and long-term extensibility. 
+
+<Flex
+    direction='column' alignItems="center"
+    position="relative" padding="32">
+    <b className={styles.b}>Architecture Diagram for InfluxDB and Grafana Integration</b>
+    <Image 
+        src={wingsArcDiagram} layout="responsive"
+        style={{ marginTop: "8px", marginBottom: "20px" }}
+        alt="Architecture diagram featuring WINGS back-end, InfluxDB, Grafana." />
+</Flex>
+
+I designed and implemented an exporter module that converts processed telemetry into structured time-series points and streams them into 
+InfluxDB with minimal overhead, sustaining high update rates with sub-second latency. I provisioned Grafana dashboards directly against this data 
+source, enabling live plots, derived metrics, and time-based analysis without duplicating visualization logic in the frontend. 
+
 
 <h3 
-    style={{ marginTop: "17px", marginBottom: "15px" }}>
+    style={{ marginTop: "17px", marginBottom: "15px" }}
+    id="other-contributions">
     Other Contributions
 </h3>
 
@@ -120,27 +176,9 @@ Other contributions I've made to the project include improving the functionality
 displays, adding help text/documentation throughout to improve software ease-of-use, conducting end-to-end testing to ensure implemented
 features work, and other various small front-end improvements. One of the most rewarding aspects of working on this project has been
 being able to develop software within a collaborative, team environment.
-
-
-<Heading
-    id="technologies-used"
-    wrap="balance" as="h2"
-    marginTop="24" marginBottom="4">
-    Technologies Used
-</Heading>
-
-<h3
-    style={{ marginTop: "20px", marginBottom: "15px" }}>
-    Front End
-</h3>
-- **TypeScript**
-- **SolidJS** as a reactive JS library
-- **Tailwind CSS** for styling
-- **Tauri** software framework
-
-<h3
-    style={{ marginTop: "25px", marginBottom: "15px" }}>
-    Back End
-</h3>
-- **Rust**
-- **Tauri** software framework
+\
+\
+Since assuming my role as Software Lead in July 2025, I've also contributed to recruiting and onboarding new developers, guiding 
+design decisions for the ground station software, and reviewing code to ensure consistency, maintainability, and correctness across the codebase.
+I introduced clearer development workflows around version control, documentation, and code review, which significantly improved team velocity and 
+reduced integration friction.
