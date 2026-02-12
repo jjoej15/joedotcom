@@ -1,4 +1,4 @@
-import { boolLights, boolLightsSettings, beforeCrc, afterCrc, graphZoomDemo, wingsArcDiagram } from "../images";
+import { boolLights, boolLightsSettings, beforeCrc, afterCrc, graphZoomDemo, wingsArcDiagram, grafanaDemo } from "../images";
 import { siteColor } from '@/once-ui/resources/config';
 import styles from "../../styles/Wings.module.sass";
 
@@ -80,13 +80,22 @@ or turn red otherwise.
     position="relative" padding="32">
     <b className={styles.b}>Indicator light settings modal</b>
     <Image 
-        src={boolLightsSettings} height={300} layout="responsive"
-        style={{ marginTop: "8px", marginBottom: "20px" }}
+        src={boolLightsSettings} height={300}
+        style={{ 
+            marginTop: "8px", 
+            marginBottom: "20px",
+            maxWidth: "100%", 
+            height: "auto" 
+        }}
         alt="Indicator light settings modal in WINGS software" />
     <b className={styles.b}>Indicator lights changing colors based on incoming data</b>
     <Image
-        src={boolLights} height={300} layout="responsive"
-        style={{ marginTop: "8px" }}
+        src={boolLights} height={300}
+        style={{ 
+            marginTop: "8px",
+            maxWidth: "100%", 
+            height: "auto"  
+        }}
         alt="Indicator light display in WINGS software" />
 </Flex>
 
@@ -154,10 +163,15 @@ data processing pipeline while enabling live dashboards, advanced querying, and 
 <Flex
     direction='column' alignItems="center"
     position="relative" padding="32">
-    <b className={styles.b}>Architecture Diagram for InfluxDB and Grafana Integration</b>
+    <b className={styles.b}>Architecture diagram for InfluxDB and Grafana integration</b>
     <Image 
-        src={wingsArcDiagram} layout="responsive"
-        style={{ marginTop: "8px", marginBottom: "20px" }}
+        src={wingsArcDiagram} height={600}
+        style={{ 
+            marginTop: "8px", 
+            marginBottom: "20px",
+            maxWidth: "100%", 
+            height: "auto"  
+        }}
         alt="Architecture diagram featuring WINGS back-end, InfluxDB, Grafana." />
 </Flex>
 
@@ -165,6 +179,20 @@ I designed and implemented an exporter module that converts processed telemetry 
 InfluxDB with minimal overhead, sustaining high update rates with sub-second latency. I provisioned Grafana dashboards directly against this data 
 source, enabling live plots, derived metrics, and time-based analysis without duplicating visualization logic in the frontend. 
 
+<Flex
+    direction='column' alignItems="center"
+    position="relative" padding="32">
+    <b className={styles.b}>Testing Grafana with real-time UFC data</b>
+    <Image 
+        src={grafanaDemo} height={500}
+        style={{ 
+            marginTop: "8px", 
+            marginBottom: "20px",
+            maxWidth: "100%", 
+            height: "auto"
+        }}
+        alt="GIF of a Grafana dashboard displaying data being received from a universal flight computer" />
+</Flex>
 
 <h3 
     style={{ marginTop: "17px", marginBottom: "15px" }}

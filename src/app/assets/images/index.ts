@@ -19,6 +19,7 @@ import beforeCrc from "./projects/wings/before-crc.png";
 import afterCrc from "./projects/wings/after-crc.png";
 import graphZoomDemo from "./projects/wings/zoom-graph-demo.png";
 import wingsArcDiagram from "./projects/wings/WINGS-grafana-integration-architecture-diagram.png";
+import grafanaDemo from "./projects/wings/grafana-demo.gif";
 
 // Misc.
 import headshot from "./headshot.jpg";
@@ -41,4 +42,5 @@ export {
     rocketTeamLogo,
     jjaStoreLogo,
     wingsArcDiagram,
+    grafanaDemo,
 };
