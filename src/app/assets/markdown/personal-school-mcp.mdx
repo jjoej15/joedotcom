@@ -1,0 +1,84 @@
+
+
+{/* outline
+- intro/summary of project (section)
+- table of contents
+- tech stack (section)
+- Design choices (section)
+    - overview
+    - RAG pipeline (subsection)
+    - KV store (subsection)
+    - MCP server (subsection)
+        - lecture content tools 
+        - gcal tools 
+        - canvas tools 
+- usage examples (section) */}
+
+import { siteColor } from '@/once-ui/resources/config';
+
+The first project we built in an Intro to Distributed Systems course (that I'm taking in the final semester 
+of my undergrad degree) was a single-node key-value store that is used to store vector representations of the 
+text from the course textbook and can be accessed through remote procedure calls (RPC). The course textbook was chunked 
+into semantically meaningful segments, then embedded into vectors and stored in an RPC-accessible store. \
+\
+I was inspired to expand on this project by implementing my own Retrieval-Augmented Generation (RAG) pipeline that would 
+process lecture slide data from the three classes I'm taking this semester and store it in the key-value store, and implement 
+a Model Context Protocol (MCP) server that would allow me to query an AI agent about lecture material. I also wanted to ask 
+the agent more general questions about my classes and events on my calendar, so I built out additional MCP tools that would 
+call the Canvas and Google Calendar APIs. \
+\
+I gained experience architecting and implementing a RAG pipeline, a gRPC-based Key-Value store server, and an MCP server in 
+this project. I built 6 MCP tools that have been super effective in allowing me to ask an AI agent questions about course schedules, 
+assignments, and lecture content, and get personalized, up-to-date responses. In the write-up below, I discuss the technologies I used, 
+some of my design choices, and some usage examples. You can also view the source code for the project 
+<SmartLink href="https://github.com/jjoej15/personal-school-mcp" color={siteColor} style={{ padding: "0", margin: "0", display: "inline", gap: "0" }}>here.</SmartLink>
+
+
+<Heading
+    wrap="balance" as="h2"
+    marginTop="24" marginBottom="12">
+    Table of Contents
+</Heading>
+
+- [Technologies Used](#technologies-used)
+- [Design Choices](#design-choices)
+    - [RAG Pipeline](#rag-pipeline)
+    - [Key-Value Store](#key-value-store)
+    - [MCP Server](#mcp-server)
+- [Usage Examples](#usage-examples)
+
+<Heading
+    id="technologies-used"
+    wrap="balance" as="h2"
+    marginTop="24" marginBottom="4">
+    Technologies Used
+</Heading>
+
+<h3
+    style={{ marginTop: "20px", marginBottom: "15px" }}>
+    RAG Pipeline
+</h3>
+- **Python**
+- **Sentence Transformers (SBART)**: Used all-MiniLM-L6-v2 model to computer embeddings and for semantic search
+
+<h3
+    style={{ marginTop: "20px", marginBottom: "15px" }}>
+    Key-Value Store 
+</h3>
+- **Python**
+- **gRPC**
+
+<h3
+    style={{ marginTop: "20px", marginBottom: "15px" }}>
+    MCP Server 
+</h3>
+- **Python**
+- **FastMCP**
+
+<Heading
+    id="design-choices"
+    wrap="balance" as="h2"
+    marginTop="24" marginBottom="12">
+    Design Choices
+</Heading>
+
