@@ -1,6 +1,7 @@
 'use client';
 
 import { Flex, Heading, SmartLink } from "@/once-ui/components";
+import Image from "next/image";
 import MCPMDX from "../../assets/markdown/personal-school-mcp.mdx";
 import Markdown from "@/app/components/Markdown";
 import ProjectHeader from "@/app/components/projects/ProjectHeader";
@@ -13,7 +14,7 @@ const PersonalMCPProject = () => {
             <ProjectHeader projectTitle="Personal MCP Server Project" />
             <Markdown
                 MDX={MCPMDX}
-                components={{ Heading, SmartLink }} />
+                components={{ Heading, SmartLink, Flex, Image }} />
         </Flex>
     )
 }

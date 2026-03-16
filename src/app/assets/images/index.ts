@@ -21,6 +21,14 @@ import graphZoomDemo from "./projects/wings/zoom-graph-demo.png";
 import wingsArcDiagram from "./projects/wings/WINGS-grafana-integration-architecture-diagram.png";
 import grafanaDemo from "./projects/wings/grafana-demo.gif";
 
+// Personal MCP Server Project
+import mcpProjectDFD from "./projects/mcp-project/personal-mcp-data-flow-diagram.png";
+import mcpQuery1Req from "./projects/mcp-project/mcp-query-1-req.png";
+import mcpQuery1Resp from "./projects/mcp-project/mcp-query-1-resp.png";
+import mcpQuery2 from "./projects/mcp-project/mcp-query-2.png";
+import mcpQuery3Req from "./projects/mcp-project/mcp-query-3-req.png";
+import mcpQuery3Resp from "./projects/mcp-project/mcp-query-3-resp.png";
+
 // Misc.
 import headshot from "./headshot.jpg";
 
@@ -43,4 +51,10 @@ export {
     jjaStoreLogo,
     wingsArcDiagram,
     grafanaDemo,
+    mcpProjectDFD,
+    mcpQuery1Req,
+    mcpQuery1Resp,
+    mcpQuery2,
+    mcpQuery3Req,
+    mcpQuery3Resp,
 };
