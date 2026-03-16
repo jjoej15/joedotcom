@@ -1,5 +1,5 @@
 import { StaticImageData } from "next/image";
-import { fitDetectFav, letterboxdLogo, wingsLogo, portfolioFav, otrioLogo, umnEmblem, jjaStoreLogo } from "./images";
+import { fitDetectFav, letterboxdLogo, wingsLogo, portfolioFav, otrioLogo, umnEmblem, jjaStoreLogo, mcpLogo } from "./images";
 
 interface Project {
     description: string;
@@ -41,6 +41,22 @@ export const projects: Project[] = [
             digital goods securely via AWS S3 presigned URLs and automated email fulfillment through SMTP/Nodemailer. Added efficient 
             audio preview streaming via a range-based API route to support seeking and smooth playback in a custom player UI. 
             Applied practical production patterns such as reusable DB/S3 clients.
+        `
+    },
+    {
+        projTitle: "Personal School MCP Server",
+        dates: "March 2026",
+        id: "mcp-server-proj",
+        href: "/projects/mcp-project",
+        image: mcpLogo,
+        altText: "A logo for the Beat License E-Commerce Store Web Application project.",
+        description: `
+            Architected an end-to-end RAG pipeline in Python that ingests lecture materials, chunks and embeds content, and stores
+            normalized vector representations in a custom gRPC key-value store with persistent state. Built and deployed 6 Model Context
+            Protocol (MCP) tools using FastMCP that enable an AI agent to perform semantic search over lecture content, retrieve Canvas
+            assignments and schedule data, and query Google Calendar events, enabling personalized, grounded, up-to-date responses to student
+            queries. Designed multi-step agentic workflows that combine external API calls (Canvas LMS, Google Calendar) with local vector
+            retrieval to resolve complex, context-dependent user requests end-to-end.
         `
     },
     {

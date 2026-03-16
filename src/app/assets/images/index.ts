@@ -11,6 +11,7 @@ import wingsLogo from "./projects/wings-logo.png";
 import portfolioFav from "./projects/portfolioFav.png";
 import otrioLogo from "./projects/OtrioIE-favicon.png"
 import jjaStoreLogo from "./projects/jja-store-logo.png";
+import mcpLogo from "./projects/mcp-logo.png";
 
 // WINGS
 import boolLights from "./projects/wings/bool-lights.png";
@@ -57,4 +58,5 @@ export {
     mcpQuery2,
     mcpQuery3Req,
     mcpQuery3Resp,
+    mcpLogo,
 };
