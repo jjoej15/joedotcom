@@ -1,0 +1,192 @@
+import { mcpProjectDFD, mcpQuery1Req, mcpQuery1Resp, mcpQuery2, mcpQuery3Req, mcpQuery3Resp } from "../images";
+import { siteColor } from '@/once-ui/resources/config';
+import styles from "../../styles/PersonalSchoolMcp.module.sass";
+
+The first project we built in an Intro to Distributed Systems course (that I'm taking in the final semester 
+of my undergrad degree) was a single-node key-value store that is used to store vector representations of the 
+text from the course textbook and can be accessed through remote procedure calls (RPC). The course textbook was chunked 
+into semantically meaningful segments, then embedded into vectors and stored in an RPC-accessible store. \
+\
+I was inspired to expand on this project by implementing my own Retrieval-Augmented Generation (RAG) pipeline that would 
+process lecture slide data from the three classes I'm taking this semester and store it in the key-value store, and implement 
+a Model Context Protocol (MCP) server that would allow me to query an AI agent about lecture material. I also wanted to ask 
+the agent more general questions about my classes and events on my calendar, so I built out additional MCP tools that would 
+call the Canvas and Google Calendar APIs. \
+\
+I gained experience architecting and implementing a RAG pipeline, a gRPC-based Key-Value store server, and an MCP server in 
+this project. I built 6 MCP tools that have been super effective in allowing me to ask an AI agent questions about course schedules, 
+assignments, and lecture content, and get personalized, up-to-date responses. You can view the source code for the project 
+<SmartLink href="https://github.com/jjoej15/personal-school-mcp" color={siteColor} style={{ padding: "0", margin: "0", display: "inline", gap: "0" }}>here.</SmartLink> 
+
+<Heading
+    wrap="balance" as="h2"
+    marginTop="24" marginBottom="12">
+    Table of Contents
+</Heading>
+
+- [Technologies Used](#technologies-used)
+- [Usage Examples](#usage-examples)
+- [Architecture](#architecture)
+- [Future Work](#future-work)
+
+<Heading
+    id="technologies-used"
+    wrap="balance" as="h2"
+    marginTop="24" marginBottom="4">
+    Technologies Used
+</Heading>
+
+<h3
+    style={{ marginTop: "20px", marginBottom: "15px" }}>
+    RAG Pipeline
+</h3>
+- **Python**
+- **Sentence Transformers (SBART)**: Used all-MiniLM-L6-v2 model to compute embeddings and for semantic search
+
+<h3
+    style={{ marginTop: "20px", marginBottom: "15px" }}>
+    Key-Value Store 
+</h3>
+- **Python**
+- **gRPC**
+
+<h3
+    style={{ marginTop: "20px", marginBottom: "15px" }}>
+    MCP Server 
+</h3>
+- **Python**
+- **FastMCP**
+
+<Heading
+    id="usage-examples"
+    wrap="balance" as="h2"
+    marginTop="24" marginBottom="12">
+    Usage Examples
+</Heading>
+
+<Flex
+    direction='column' alignItems="center"
+    position="relative" padding="32">
+    <b className={styles.b}>Lecture Slide Query</b>
+    <Image 
+        src={mcpQuery1Req} height={500}
+        style={{ 
+            marginTop: "8px", 
+            marginBottom: "20px",
+            maxWidth: "100%", 
+            height: "auto" 
+        }} />
+    <b className={styles.b}>Lecture Slide Query Response</b>
+    <Image
+        src={mcpQuery1Resp} height={500}
+        style={{ 
+            marginTop: "8px",
+            maxWidth: "100%", 
+            height: "auto"  
+        }} />
+</Flex>
+
+<Flex
+    direction='column' alignItems="center"
+    position="relative" padding="32">
+    <b className={styles.b}>Canvas Schedule Query</b>
+    <Image 
+        src={mcpQuery2} height={500}
+        style={{ 
+            marginTop: "8px", 
+            marginBottom: "20px",
+            maxWidth: "100%", 
+            height: "auto" 
+        }} />
+</Flex>
+
+<Flex
+    direction='column' alignItems="center"
+    position="relative" padding="32">
+    <b className={styles.b}>Google Calendar Query</b>
+    <Image 
+        src={mcpQuery3Req} height={500}
+        style={{ 
+            marginTop: "8px", 
+            marginBottom: "20px",
+            maxWidth: "100%", 
+            height: "auto" 
+        }} />
+    <b className={styles.b}>Google Calendar Query Response</b>
+    <Image
+        src={mcpQuery3Resp} height={500}
+        style={{ 
+            marginTop: "8px",
+            maxWidth: "100%", 
+            height: "auto"  
+        }} />
+</Flex>
+
+<Heading
+    id="architecture"
+    wrap="balance" as="h2"
+    marginTop="24" marginBottom="12">
+    Architecture
+</Heading>
+
+<Flex
+    direction='column' alignItems="center"
+    position="relative" padding="32">
+    <b className={styles.b}>Data Flow Diagram</b>
+    <Image 
+        src={mcpProjectDFD} height={500}
+        style={{ 
+            marginTop: "8px", 
+            marginBottom: "20px",
+            maxWidth: "100%", 
+            height: "auto" 
+        }}
+        alt="Data flow diagram for the MCP project" />
+</Flex>
+
+- The lecture slide ingestion pipeline reads `.pdf` and `.docx` lecture material, normalizes text, chunks content, generates embeddings, and writes JSONL records.
+- The ingestion client uploads the lecture slide text chunks and embeddings into the key-value store.
+- The gRPC key-value server stores lecture text chunks and embeddings, supports health checks, streams embeddings for retrieval, and persists state to disk.
+- FastMCP server registers all tools and provides one local MCP endpoint for AI assistants.
+- Lecture search tools that perform semantic retrieval by comparing query embeddings against stored vectors and returning top matching passages.
+- Canvas MCP tools for listing and filtering assignments, fetching assignment details, and retrieving grade/submission information by using the Canvas LMS API.
+- Google Calendar MCP tools for listing calendars and retrieving events across day, week, and custom date windows using the Google Calendar API.
+- User queries AI agents through the GitHub Copilot interface, which can use the MCP tools.
+
+<h3
+    style={{ marginTop: "20px", marginBottom: "15px" }}>
+    Available MCP Tools 
+</h3>
+
+- `search_lecture_slides`: Retrieves the most relevant lecture slide passages for a query using semantic similarity.
+- `canvas_get_schedule`: Returns Canvas calendar events for a date range.
+- `canvas_get_assignments`: Returns Canvas assignments by due-date window.
+- `canvas_get_assignment_details`: Returns assignment details for a specific assignment name.
+- `google_calendar_list_calendars`: Returns all calendars available to the authenticated user.
+- `google_calendar_get_events`: Returns Google Calendar events by time window.
+
+<Heading
+    id="future-work"
+    wrap="balance" as="h2"
+    marginTop="24" marginBottom="12">
+    Future Work
+</Heading>
+
+As of right now, I have to manually download lecture slides and put them into the `data-processing/RAG/documents` directory.
+It'd be nice to have a script that would pull and download lecture slides from the Canvas API and integrate
+it into the document ingestor script to avoid this manual download process, and ensure the vector embeddings
+are up-to-date. I made an attempt to implement a script to do this when I first started working on this project, but quit once 
+I realized that some Canvas courses don't allow students to access the 
+<SmartLink href="https://developerdocs.instructure.com/services/canvas/resources/files" color={siteColor} style={{ padding: "0", margin: "0", display: "inline", gap: "0" }}>Files API.</SmartLink>
+There should still be ways to download files programmatically using different resources that are available through the Canvas
+LMS API aside from the Files API. For example, while I don't have access to the Files API in my STAT 4102 class,
+I believe I can still download files from it using the 
+<SmartLink href="https://developerdocs.instructure.com/services/canvas/resources/modules" color={siteColor} style={{ padding: "0", margin: "0", display: "inline", gap: "0" }}>Modules API.</SmartLink> \
+\
+While the MCP tools help with tasks that include summarizing lecture content and answering questions
+about assignment logistics and schedule information, there's still a lot of queries that a student may be
+interested in asking an AI agent that it can't answer yet. Adding other documents on Canvas related to coursework
+such as textbook PDFs, homework assignments, and syllabus material to be ingested into the RAG pipeline
+and then building out additional corresponding MCP tools for this content will allow for a more generalized agent 
+that can answer more course-related questions, such as homework or textbook related questions. As the 
+variety of ingested docuements increases, 
